@@ -1,0 +1,12 @@
+{
+  "transport": "ftp",
+  "hostname": "185.2.67.7",
+  "port": 21,
+  "username": "jkelleher",
+  "password": "S155jI3iZzwW",
+  "target": "/webspace/httpdocs/blog.jkelleher.me",
+  "uploadOnSave": "true",
+  "ignore": [
+    ".git/**","cache/**", ".remote-sync.json"
+  ]
+}

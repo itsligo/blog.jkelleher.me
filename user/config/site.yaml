@@ -1,0 +1,45 @@
+title: John Kelleher
+description: Lecturer & Developer
+taxonomies: [tag, featured]
+metadata:
+    description: John Kelleher - Lecturer and Coder
+
+logo: /user/images/logo.png
+
+date_long: 'd F Y'
+date_short: 'd M Y'
+
+author:
+    name: John Kelleher
+    email: john@jkelleher.me
+    image: /user/images/avatar.jpg
+    bio: I'm a developer and lecture at IT Sligo
+
+social:
+    - icon: twitter
+      url: https://twitter.com/johnkelleher
+      desc: Follow me on twitter
+      share_url: http://twitter.com/share
+      share_title: ?text=
+      share_link: "&amp;url="
+
+    - icon:  facebook
+      url:   https://facebook.com/jkelleher42
+      desc: Connect with me facebook
+      share_url: //www.facebook.com/sharer.php
+      share_title: ?t=
+      share_link: "&amp;u="
+
+    - icon: github
+      url: https://github.com/jkelleher
+      desc: Fork me on github
+      share_url:
+      share_title:
+      share_link:
+
+    - icon:  google-plus
+      url:   https://google.com/+JohnKelleher
+      desc:  Add me on google+
+      share_url:
+      share_title:
+      share_link:
