@@ -4,7 +4,7 @@ slug: localhost
 date: 2015/03/16 14:25:23
 taxonomy:
  tag: web-dev
-image: home.jpg
+image: localhost.jpg
 ---
 
 Recently, working on a few projects at once, I needed a more streamlined means of running a web server. Typically, working in Visual Studio I left it to do the spin up of IISExpress or the internal development server which did the job fine but as I move more development to the Mac side, I looked at other options. I'm finding myself in Terminal (well, [iTerm2](http://iterm2.com/)) more often now so here's an array of possibilities:

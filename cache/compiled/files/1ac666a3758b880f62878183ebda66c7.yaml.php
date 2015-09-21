@@ -2,13 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/site.yaml',
-    'modified' => 1439488969,
+    'modified' => 1441360951,
     'data' => [
         'title' => 'John Kelleher',
         'description' => 'Lecturer & Developer',
         'taxonomies' => [
-            0 => 'tag',
-            1 => 'featured'
+            0 => 'category',
+            1 => 'tag',
+            2 => 'featured'
         ],
         'metadata' => [
             'description' => 'John Kelleher - Lecturer and Coder'

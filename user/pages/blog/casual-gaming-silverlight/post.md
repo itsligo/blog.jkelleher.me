@@ -2,22 +2,23 @@
 title: Casual Gaming & Silverlight
 date: 2010/03/17 18:45:00
 taxonomy: 
- category: blog 
+ tag: gaming
+image: gamer.jpg
 ---
 
 ## [Grant Skinner](http://gskinner.com/blog/)
 
-![](http://api.ning.com/files/7kJAUAop4jgIgXDbD2uSwkhAfwSTnuY*SVRfntvl2JUUeYYf-pZXCcOMeebD2DOFJYKVWkzdanpdL5D*jtUAPHa6eQVpo7d4/gskinner09_1_bw.jpg?width=183&height=183&crop=1%3A1)
-
 Casual gaming on the rise significantly. Market dominated (65%) by women. Social gaming rising exponentially. Developers are taking on the bulk of the work ahead of designers. Big companies are starting to move into the casual games space making opportunities for folk to get paid.
 
-**[Silverlight multiplayer games](http://www.slideshare.net/jkelleher/silverlight-multiplayer-games-3457708)**
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/dwgUxhesuC00xQ" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
-View more [presentations](http://www.slideshare.net/) from [jkelleher](http://www.slideshare.net/jkelleher).
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jkelleher/silverlight-multiplayer-games-3457708" title="Silverlight multiplayer games" target="_blank">Silverlight multiplayer games</a> </strong> from <strong><a href="//www.slideshare.net/jkelleher" target="_blank">John Kelleher</a></strong> </div>
+
+<!-- View more [presentations](http://www.slideshare.net/) from [jkelleher](http://www.slideshare.net/jkelleher). -->
 
 Facebook dominate the social games market. They are about to rollout FB credits. Currently growing at 10%.
 
-## Game developer qualifications
+### Game developer qualifications
 
 One of the best ways to expand your abilities as a developer, but requires a special type of developer. Grant sees multiplayer game development as a superset of game development, itself being a superset of application development.
 

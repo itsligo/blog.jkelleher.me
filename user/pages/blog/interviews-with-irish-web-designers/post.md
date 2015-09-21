@@ -1,12 +1,12 @@
 ---
-title: interviews with Irish web designers
+title: Interviews with Irish web designers
 date: 2009/10/25 08:25:00
 taxonomy: 
- category: blog 
+ tag: [industry]
 ---
-
 This collection from [Smashing Magazine](http://www.smashingmagazine.com/2009/10/23/showcase-of-web-design-in-ireland-2/) is a decent snapshot of the state-of-the-nation from a web design perspective.
- ![image](http://lh5.ggpht.com/_-8eBgLSYyzA/SuQLkJJcjII/AAAAAAAAFD8/hczKWUfrnrE/image_thumb%5B3%5D.png?imgmax=800)
+
+ ![Smashing Magazine Interviews](interviews.png)
 
 The designers talk candidly about what seems to be a buoyant industry here-abouts. Decent showcase of sites follows.
 

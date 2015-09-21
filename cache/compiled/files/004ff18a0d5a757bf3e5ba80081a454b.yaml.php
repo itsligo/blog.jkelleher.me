@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/feed/blueprints.yaml',
-    'modified' => 1437742390,
+    'modified' => 1441294783,
     'data' => [
         'name' => 'Feed',
-        'version' => '1.3.3',
+        'version' => '1.4.0',
         'description' => 'The **Feed** plugin is a simple yet powerful add-on that lets you view a Grav Collection as **RSS** or **Atom** news feed.',
         'icon' => 'rss',
         'author' => [
@@ -34,11 +34,11 @@ return [
                         'type' => 'bool'
                     ]
                 ],
-                'count' => [
+                'limit' => [
                     'type' => 'text',
                     'label' => 'Feed count',
                     'validate' => [
-                        'type' => 'int',
+                        'type' => 'number',
                         'min' => 10,
                         'max' => 1000
                     ]
@@ -50,16 +50,17 @@ return [
                 'lang' => [
                     'type' => 'text',
                     'label' => 'Feed language code',
-                    'placeholder' => 'en-us',
+                    'default' => 'en',
+                    'placeholder' => 'en',
                     'validate' => [
-                        'pattern' => '[a-zA-Z]{2,3}-a-zA-Z]{2,3}'
+                        'pattern' => '[a-zA-Z]{2,3}(-[a-zA-Z]{2,3})?'
                     ]
                 ],
                 'length' => [
                     'type' => 'text',
                     'label' => 'Feed Length',
                     'validate' => [
-                        'type' => 'int',
+                        'type' => 'number',
                         'min' => 10,
                         'max' => 10000
                     ]

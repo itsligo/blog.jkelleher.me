@@ -2,10 +2,10 @@
 title: Where good engineering goes bad…
 date: 2009/12/18 09:55:00
 taxonomy: 
- category: blog 
+ tag: ux
 ---
 
-![](http://www.blogcdn.com/www.engadget.com/media/2009/12/17dec9iuobsegf43.jpg)
+![Snow on LED traffic lights](traffic-lights.jpg)
 
 Just when you think you have a great solution that ticks all the boxes like a neat elegant bit of code that covers all the options, then along comes some unexpected side effect that scuppers your innovative efforts.
 

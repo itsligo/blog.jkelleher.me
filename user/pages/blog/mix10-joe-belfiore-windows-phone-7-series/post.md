@@ -2,10 +2,10 @@
 title: MIX10- Joe Belfiore, Windows Phone 7 Series
 date: 2010/03/15 21:11:00
 taxonomy: 
- category: blog 
+ tag: [industry,mobile]
 ---
 
-![DSCN0093](http://lh3.ggpht.com/_-8eBgLSYyzA/S56ii5EFIAI/AAAAAAABCDk/Wy2gEETdzRU/DSCN0093_thumb.jpg?imgmax=800)
+![Joe Belfiore](joe-mix-10.jpg)
 
 Listening to Joe Belifore follow-on from the keynote, it’s interesting to hear just how seriously they take the use of scenarios and personas. WinPhone 7 series use the live tiles as the heart of the experience, seeing real info without entering an app – glance-able information. For example, seeing the music I’ve been listening to lately.
 

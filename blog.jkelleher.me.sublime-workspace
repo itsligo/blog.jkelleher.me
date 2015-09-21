@@ -323,15 +323,39 @@
 			"file": "user/themes/jktheme/templates/partials/base.html.twig",
 			"settings":
 			{
-				"buffer_size": 3181,
+				"buffer_size": 3411,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "user/config/system.yaml",
+			"file": "user/pages/blog/localhost-options/post.md",
 			"settings":
 			{
-				"buffer_size": 524,
+				"buffer_size": 2654,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2015-09-14-kernel_task-issues/post.md",
+			"settings":
+			{
+				"buffer_size": 2397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2015-08-13-web-dev-workflow/post.md",
+			"settings":
+			{
+				"buffer_size": 15126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/themes/jktheme/templates/post.html.twig",
+			"settings":
+			{
+				"buffer_size": 4516,
 				"line_ending": "Unix"
 			}
 		}
@@ -343,17 +367,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 89.0,
-		"last_filter": "install p",
+		"height": 392.0,
+		"last_filter": "package",
 		"selected_items":
 		[
 			[
-				"install p",
-				"Package Control: Install Package"
+				"package",
+				"Package Control: List Packages"
 			],
 			[
-				"package",
-				"Package Control: Remove Package"
+				"update packa",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
 			],
 			[
 				"install pac",
@@ -458,52 +486,174 @@
 	"expanded_folders":
 	[
 		"/Users/john/Sites/blog.jkelleher.me",
-		"/Users/john/Sites/blog.jkelleher.me/system",
-		"/Users/john/Sites/blog.jkelleher.me/system/config",
 		"/Users/john/Sites/blog.jkelleher.me/user",
-		"/Users/john/Sites/blog.jkelleher.me/user/config",
-		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-14-kernel_task-issues",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/aiding-early-app-interface-design",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/and-were-back",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/ba-da-bing-ba-da-bing",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/browser-share-perspective",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/camouflage-art",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/casual-gaming-silverlight",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/clearrx-prescription-bottle-redesign",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/composing-posting-videos",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/computing-projects-showcase",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/death-by-powerpoint",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/designing-and-developing-for-the-mobile-web",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dnn-authentication",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dotnetnuke",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/future-interface-design",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/getting-parallels-7-to-play-nice-with-windows-8",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/home-movies",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/interviews-with-irish-web-designers",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/isbusyindicator-bug",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/learning-in-2020",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/locus-crm-delivered",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/made-to-stick",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/marketeers-vs-engineers",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix-essentials-24-6-09-dublin-hilton",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-joe-belfiore-windows-phone-7-series",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-keynote-day-2",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mvvm-where-to-start",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/pagedcollectionview-with-entity-framework",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/proposed-web-development-programme",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/samsung-hd-camera-trick",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/source-control",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/tape-measure-funny",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/taxonomy-ie",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-elephant-in-the-room",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-last-harvest",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-truth-about-the-dinosaurs",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/where-good-engineering-goes-bad",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/windows-95-on-an-iphone",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/worldwide-broadband-costspeedpenetration",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/vendor",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/vendor/bourbon",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/scss",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials"
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates"
 	],
 	"file_history":
 	[
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/main.scss",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/javascripts.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/javascripts.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/base.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/optimising-web-sites/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/config/system.yaml",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/post.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/article.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/postmeta.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/postmeta.html.twig",
+		"/Users/john/Sites/pw_blog/site/config.php",
+		"/Users/john/Sites/pw_blog/wire/index.config.php",
+		"/Users/john/Sites/pw_blog/wire/config.php",
+		"/Users/john/Documents/dev/class/ProcessWire/wire/config.php",
+		"/Users/john/Documents/dev/class/ProcessWire/site/config.php",
+		"/Users/john/Documents/dev/class/itsligo.github.io/index.html",
+		"/Users/john/Documents/dev/v1/Vagrantfile",
+		"/Users/john/Documents/dev/class/ProcessWire/.htaccess",
+		"/Users/john/Documents/dev/v1/bootstrap.sh",
+		"/Users/john/Documents/dev/class/projectx/index.html",
+		"/Users/john/Documents/dev/class/projectx/README.md",
+		"/Users/john/Documents/dev/class/projectx/Gemfile",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/system/config/system.yaml",
+		"/Users/john/Sites/blog.jkelleher.me/user/config/system.yaml",
+		"/Users/john/Downloads/localhost.png",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/main.scss",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/default.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/ba-da-bing-ba-da-bing/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/made-to-stick/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/microsoft-surface-app/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/getting-parallels-7-to-play-nice-with-windows-8/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/source-control/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/how-not-to-do-a-booking-system/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/lego-mindstorms-nxt-8547-for-sale/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/copying-dnn-pages-authoring/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/worldwide-broadband-costspeedpenetration/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/enjoying-workshop-on-social-bookmarking/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/locus-crm-delivered/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/and-were-back/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/steve-krug-the-least-you-can-do/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/expression-media-encoder/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/camouflage-art/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/clearrx-prescription-bottle-redesign/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix-essentials-24-6-09-dublin-hilton/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/interviews-with-irish-web-designers/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/using-google-calendar/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/where-good-engineering-goes-bad/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-keynote-day-2/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/tape-measure-funny/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/marketeers-vs-engineers/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/home-movies/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/windows-95-on-an-iphone/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mvvm-where-to-start/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/most-popular-strip-for-nov-19-2009-rank-2/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-report/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-joe-belfiore-windows-phone-7-series/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-truth-about-the-dinosaurs/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-robots-are-coming/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/toyota-hybrid-ad/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/browser-share-perspective/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/vendor/bourbon/css3/_image-rendering.scss",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/proposed-web-development-programme/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/isbusyindicator-bug/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/wcfria-services-with-mvvm/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/aiding-early-app-interface-design/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/uploading-project-work/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/brian-cowen-another-awkward-moment/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/taxonomy-ie/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dotnetnuke/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/casual-gaming-silverlight/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/schwarzenegger-gives-california-legislature-a-hidden-finger/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/computing-projects-showcase/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2010-06-02-entity-framework-limitations/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/software-for-less/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/new-anti-windows-7-ads-from-apple/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/pagedcollectionview-with-entity-framework/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/future-interface-design/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/designing-and-developing-for-the-mobile-web/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-last-harvest/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dnn-authentication/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/death-by-powerpoint/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/learning-in-2020/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/composing-posting-videos/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/site.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/default.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/random.yaml",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/base.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-elephant-in-the-room/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/samsung-hd-camera-trick/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/postmeta.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/how-the-right-brainers-are-taking-over-the-world/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/flat-file-cms/post.md",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/optimising-web-sites/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/flat-file-cms/blogging.jpg",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/drupal-a-fragile-creature/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/relatedpages.yaml",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/relatedpages.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css/main.css",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/about/page.md",
+		"/Users/john/Sites/blog.jkelleher.me/.gitignore",
+		"/Users/john/Sites/blog.jkelleher.me/user/plugins/mediaembed/.gitignore",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/javascripts.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/javascripts.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/post.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/article.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/postmeta.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/article.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/page.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css/main.css",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/cachebuster.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/config.rb",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/azure-deployment/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/a-glimpse-into-mobile-development/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/scss/main.scss",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/system/config/site.yaml",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2010-06-02-entity-framework-limitations/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/sftp-config.json",
 		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru/item.md",
@@ -521,90 +671,7 @@
 		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca2/modweek.txt",
 		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca3/modweek.txt",
 		"/Users/john/Sites/class.jkelleher.me/clsss.sublime-project",
-		"/Users/john/Sites/class.jkelleher.me/content/08-prj300/01-begin/modproject.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/00-schedule/05-week-9-10/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/modschedule.txt",
-		"/Users/john/Sites/class.jkelleher.me/site/templates/home.php",
-		"/Users/john/Sites/class.jkelleher.me/site/snippets/header.php",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca1/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/06-hci401/module.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/05-rad302/00-schedule/01-week-5-6/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/07-hci402/99-assess/modschedule.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/07-hci402/00-schedule/04-week-7-9/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/08-prj300/03-handup/04-assessment/modproject.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/05-rad302/99-assess/-2013-CA1/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/00-schedule/04-Week-7-8/modweek.txt",
-		"/Users/john/Sites/gk_grav/web.config",
-		"/Users/john/Sites/prj_grav/vendor/doctrine/cache/README.md",
-		"/Users/john/Sites/prj_grav/user/themes/antimatter/README.md",
-		"/Users/john/Sites/prj_grav/user/plugins/taxonomylist/README.md",
-		"/Users/john/Sites/prj_grav/user/plugins/simplesearch/README.md",
-		"/Users/john/Sites/prj_grav/user/plugins/relatedpages/README.md",
-		"/Users/john/Sites/prj_grav/user/plugins/problems/README.md",
-		"/Users/john/Sites/prj_grav/user/plugins/error/README.md",
-		"/Users/john/Sites/prj_grav/README.md",
-		"/Users/john/Sites/prj_grav/user/themes/canvas/css/style.css",
-		"/Users/john/Sites/prj_grav/user/pages/01.home/home.md",
-		"/Users/john/Sites/prj_grav/user/plugins/error/hebe.json",
-		"/Users/john/Sites/prj_grav/vendor/monolog/monolog/src/Monolog/Handler/MissingExtensionException.php",
-		"/Users/john/Sites/prj_grav/htaccess.txt",
-		"/Users/john/Sites/prj_grav/user/config/site.yaml",
-		"/Users/john/Sites/prj_grav/user/config/programmes.yaml",
-		"/Users/john/Sites/prj_grav/system/config/system.yaml",
-		"/Users/john/Sites/prj_grav/system/config/streams.yaml",
-		"/Users/john/Sites/prj_grav/system/config/site.yaml",
-		"/Users/john/Sites/prj_grav/system/config/media.yaml",
-		"/Users/john/Sites/prj_grav/.editorconfig",
-		"/Users/john/Sites/prj_grav/vendor/maximebf/debugbar/demo/bridge/doctrine/cli-config.php",
-		"/Users/john/Sites/prj_grav/vendor/maximebf/debugbar/tests/DebugBar/Tests/DataCollector/ConfigCollectorTest.php",
-		"/Users/john/Sites/prj_grav/web.config",
-		"/Users/john/Sites/prj_grav/vendor/maximebf/debugbar/src/DebugBar/DataCollector/ConfigCollector.php",
-		"/Users/john/Sites/prj_grav/system/src/Grav/Common/Service/ConfigServiceProvider.php",
-		"/Users/john/Sites/prj_grav/system/src/Grav/Common/Config/ConfigFinder.php",
-		"/Users/john/Sites/prj_grav/system/src/Grav/Common/Config/Config.php",
-		"/Users/john/Sites/prj_grav/sftp-config.json",
-		"/Users/john/Sites/prj_grav/composer.json",
-		"/Users/john/Sites/prj_grav/CHANGELOG.md",
-		"/Users/john/Sites/prj_grav/user/themes/canvas/include/ajax/shop-item.html",
-		"/Users/john/Sites/prj_grav/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php",
-		"/Users/john/Sites/prj_grav/vendor/maximebf/debugbar/src/DebugBar/Storage/StorageInterface.php",
-		"/Users/john/Sites/prj_grav/vendor/twig/twig/lib/Twig/Sandbox/SecurityError.php",
-		"/Users/john/Sites/prj_grav/vendor/rockettheme/toolbox/StreamWrapper/src/StreamInterface.php",
-		"/Users/john/Sites/prj_grav/vendor/rockettheme/toolbox/ArrayTraits/src/Iterator.php",
-		"/Users/john/Sites/prj_grav/system/src/Grav/Common/Iterator.php",
-		"/Users/john/Sites/prj_grav/vendor/twig/twig/lib/Twig/SimpleTest.php",
-		"/Users/john/Sites/prj_grav/user/themes/canvas/templates/partials/simplesearch_item.html.twig",
-		"/Users/john/Sites/prj_grav/user/plugins/simplesearch/templates/partials/simplesearch_item.html.twig",
-		"/Users/john/Sites/prj_grav/system/blueprints/config/site.yaml",
-		"/Users/john/Sites/prj_grav/user/pages/02.projects/projects.md",
-		"/Users/john/Sites/prj_grav/php.ini",
-		"/Users/john/Sites/prj_grav/cache/problem-check-22d9f295",
-		"/Users/john/Sites/prj_grav/user/themes/canvas/templates/portfolio-single-thumbs-right.html",
-		"/Users/john/Sites/prj_grav/user/pages/02.projects/15.2015-Project-Illuminate/project.md",
-		"/Users/john/Documents/dev/sps/app/.sass-cache/1b3ebfed19de4747b8f8f1e34e6725129305dfdd/_custom.scssc",
-		"/Users/john/Documents/dev/sps/app/scripts/controllers/providers.js",
-		"/Users/john/Documents/dev/sps/app/scripts/controllers/provider/providers.js",
-		"/Users/john/Documents/dev/sps/app/views/providers.html",
-		"/Users/john/Documents/dev/sps/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
-		"/Users/john/Documents/dev/sps/app/.sass-cache/3613192daf25fb3f929133ef5c6358353403a16b/_custom.scssc",
-		"/Users/john/Documents/dev/sps/app/styles/sass/_custom.scss",
-		"/Users/john/Documents/dev/sps/sps.sublime-project",
-		"/Users/john/Documents/dev/sps/app/index.html",
-		"/Users/john/Documents/dev/sps/app/scripts/controllers/placements.js",
-		"/Users/john/Documents/dev/sps/app/views/placement_types.html",
-		"/Users/john/Documents/dev/sps/app/scripts/controllers/placementType/placementTypes.js",
-		"/Users/john/Documents/dev/sps/app/views/partials/placement/placement_add.html",
-		"/Users/john/Documents/dev/sps/app/views/partials/placement/placement_details.html",
-		"/Users/john/Documents/dev/sps/app/views/partials/placement/placement_edit.html",
-		"/Users/john/Documents/dev/sps/app/scripts/controllers/placement/placementAddCtrl.js",
-		"/Users/john/Documents/dev/sps/package.json",
-		"/Users/john/Documents/dev/sps/app/scripts/services/data_placed.js",
-		"/Users/john/Documents/dev/sps/node_modules/grunt-svgmin/node_modules/svgo/plugins/convertPathData.js",
-		"/Users/john/Documents/dev/sps/.idea/libraries/sps_node_modules.xml",
-		"/Users/john/Documents/dev/sps/.idea/sps.iml",
-		"/Users/john/Documents/dev/sps/app/bower_components/select2/select2_locale_pl.js",
-		"/Users/john/Documents/dev/sps/app/views/students.html",
-		"/Users/john/Documents/dev/sps/app/views/partials/programme/programme_add.html"
+		"/Users/john/Sites/class.jkelleher.me/content/08-prj300/01-begin/modproject.txt"
 	],
 	"find":
 	{
@@ -615,6 +682,9 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"",
+			".",
+			"/user",
 			"..",
 			".",
 			""
@@ -625,6 +695,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
+			"image",
+			".image",
+			"image",
+			"img",
+			"figure",
+			"---",
+			"list-style",
+			"decimal",
+			"blog-header",
+			"custom-links",
+			"JK",
+			"5.",
+			"chain",
+			"related_pages_link",
+			"JK",
+			"Static site editors",
+			"actually",
+			"localhost",
 			"jk",
 			"on ",
 			"on",
@@ -733,26 +822,7 @@
 			"auth",
 			"home",
 			"basectrl",
-			"auth",
-			"authService.authentication",
-			"authService",
-			"authy",
-			"service",
-			"p.Preference",
-			"spsDataStudentsspsDataStudents",
-			"spsDataPlacements",
-			"spsDataProgrammes",
-			"prefBtn",
-			"userrole",
-			"admin",
-			"rootscope",
-			"pd",
-			"role",
-			".",
-			"hasPref",
-			"filled",
-			"warning",
-			"pd"
+			"auth"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -898,7 +968,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -907,15 +977,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3181,
+						"buffer_size": 3411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1483,
-								1483
+								2533,
+								2533
 							]
 						],
 						"settings":
@@ -923,26 +993,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -953,16 +1018,16 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -973,13 +1038,18 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"color_scheme": "Packages/User/Eiffel (SL).tmTheme",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -996,19 +1066,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "user/config/system.yaml",
+					"file": "user/pages/blog/localhost-options/post.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 524,
+						"buffer_size": 2654,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								325,
-								325
+								94,
+								94
+							],
+							[
+								493,
+								493
 							]
 						],
 						"settings":
@@ -1016,26 +1090,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1046,16 +1115,16 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1066,17 +1135,206 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "user/pages/blog/2015-09-14-kernel_task-issues/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"color_scheme": "Packages/User/Eiffel (SL).tmTheme",
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "user/pages/blog/2015-08-13-web-dev-workflow/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								990,
+								990
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1085,6 +1343,105 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"file": "user/pages/blog/2015-09-14-kernel_task-issues/yeoman-logo.png",
+					"semi_transient": true,
+					"stack_index": 5,
+					"type": "image"
+				},
+				{
+					"buffer": 4,
+					"file": "user/themes/jktheme/templates/post.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								974,
+								974
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1155,8 +1512,328 @@
 		"selected_items":
 		[
 			[
+				"web-dev",
+				"user/pages/blog/2015-08-13-web-dev-workflow/post.md"
+			],
+			[
+				"kernel",
+				"user/pages/blog/2015-09-14-kernel_task-issues/post.md"
+			],
+			[
+				"localhost",
+				"user/pages/blog/localhost-options/post.md"
+			],
+			[
+				"post.html",
+				"user/themes/jktheme/templates/post.html.twig"
+			],
+			[
 				"system",
 				"user/config/system.yaml"
+			],
+			[
+				"base.html",
+				"user/themes/jktheme/templates/partials/base.html.twig"
+			],
+			[
+				"badabada",
+				"user/pages/blog/ba-da-bing-ba-da-bing/post.md"
+			],
+			[
+				"microsoftsur",
+				"user/pages/blog/microsoft-surface-app/post.md"
+			],
+			[
+				"madetostick",
+				"user/pages/blog/made-to-stick/post.md"
+			],
+			[
+				"worldwide",
+				"user/pages/blog/worldwide-broadband-costspeedpenetration/post.md"
+			],
+			[
+				"copying",
+				"user/pages/blog/copying-dnn-pages-authoring/post.md"
+			],
+			[
+				"legomin",
+				"user/pages/blog/lego-mindstorms-nxt-8547-for-sale/post.md"
+			],
+			[
+				"hownot",
+				"user/pages/blog/how-not-to-do-a-booking-system/post.md"
+			],
+			[
+				"sourcecontrol",
+				"user/pages/blog/source-control/post.md"
+			],
+			[
+				"enjoying",
+				"user/pages/blog/enjoying-workshop-on-social-bookmarking/post.md"
+			],
+			[
+				"parallels",
+				"user/pages/blog/getting-parallels-7-to-play-nice-with-windows-8/post.md"
+			],
+			[
+				"expression",
+				"user/pages/blog/expression-media-encoder/post.md"
+			],
+			[
+				"stevekrug",
+				"user/pages/blog/steve-krug-the-least-you-can-do/post.md"
+			],
+			[
+				"andwer",
+				"user/pages/blog/and-were-back/post.md"
+			],
+			[
+				"locus",
+				"user/pages/blog/locus-crm-delivered/post.md"
+			],
+			[
+				"wierd",
+				"user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru/post.md"
+			],
+			[
+				"camofla",
+				"user/pages/blog/camouflage-art/post.md"
+			],
+			[
+				"interviews",
+				"user/pages/blog/interviews-with-irish-web-designers/post.md"
+			],
+			[
+				"mix-essent",
+				"user/pages/blog/mix-essentials-24-6-09-dublin-hilton/post.md"
+			],
+			[
+				"clearx",
+				"user/pages/blog/clearrx-prescription-bottle-redesign/post.md"
+			],
+			[
+				"tapemeau",
+				"user/pages/blog/tape-measure-funny/post.md"
+			],
+			[
+				"mixday",
+				"user/pages/blog/mix10-keynote-day-2/post.md"
+			],
+			[
+				"whengoo",
+				"user/pages/blog/where-good-engineering-goes-bad/post.md"
+			],
+			[
+				"market",
+				"user/pages/blog/marketeers-vs-engineers/post.md"
+			],
+			[
+				"windows95",
+				"user/pages/blog/windows-95-on-an-iphone/post.md"
+			],
+			[
+				"homemovies",
+				"user/pages/blog/home-movies/post.md"
+			],
+			[
+				"usinggoogle",
+				"user/pages/blog/using-google-calendar/post.md"
+			],
+			[
+				"mvvm",
+				"user/pages/blog/mvvm-where-to-start/post.md"
+			],
+			[
+				"mix10",
+				"user/pages/blog/mix10-report/post.md"
+			],
+			[
+				"mostpopular",
+				"user/pages/blog/most-popular-strip-for-nov-19-2009-rank-2/post.md"
+			],
+			[
+				"truth",
+				"user/pages/blog/the-truth-about-the-dinosaurs/post.md"
+			],
+			[
+				"thetruth",
+				"user/pages/blog/the-truth-about-the-dinosaurs/post.md"
+			],
+			[
+				"toyota",
+				"user/pages/blog/toyota-hybrid-ad/post.md"
+			],
+			[
+				"therobots",
+				"user/pages/blog/the-robots-are-coming/post.md"
+			],
+			[
+				"webdevelop",
+				"user/pages/blog/proposed-web-development-programme/post.md"
+			],
+			[
+				"browsershare",
+				"user/pages/blog/browser-share-perspective/post.md"
+			],
+			[
+				"isbusy",
+				"user/pages/blog/isbusyindicator-bug/post.md"
+			],
+			[
+				"taxonomy",
+				"user/pages/blog/taxonomy-ie/post.md"
+			],
+			[
+				"briancow",
+				"user/pages/blog/brian-cowen-another-awkward-moment/post.md"
+			],
+			[
+				"uploading",
+				"user/pages/blog/uploading-project-work/post.md"
+			],
+			[
+				"aiding",
+				"user/pages/blog/aiding-early-app-interface-design/post.md"
+			],
+			[
+				"dotnetnuk",
+				"user/pages/blog/dotnetnuke/post.md"
+			],
+			[
+				"wcf",
+				"user/pages/blog/wcfria-services-with-mvvm/post.md"
+			],
+			[
+				"casual",
+				"user/pages/blog/casual-gaming-silverlight/post.md"
+			],
+			[
+				"california",
+				"user/pages/blog/schwarzenegger-gives-california-legislature-a-hidden-finger/post.md"
+			],
+			[
+				"ef-limitations",
+				"user/pages/blog/2010-06-02-entity-framework-limitations/post.md"
+			],
+			[
+				"entityframework",
+				"user/pages/blog/2010-06-02-entity-framework-limitations/post.md"
+			],
+			[
+				"pagedcollection",
+				"user/pages/blog/pagedcollectionview-with-entity-framework/post.md"
+			],
+			[
+				"newapple",
+				"user/pages/blog/new-anti-windows-7-ads-from-apple/post.md"
+			],
+			[
+				"softwarefor",
+				"user/pages/blog/software-for-less/post.md"
+			],
+			[
+				"future",
+				"user/pages/blog/future-interface-design/post.md"
+			],
+			[
+				"design",
+				"user/pages/blog/designing-and-developing-for-the-mobile-web/post.md"
+			],
+			[
+				"the-last",
+				"user/pages/blog/the-last-harvest/post.md"
+			],
+			[
+				"dnn",
+				"user/pages/blog/dnn-authentication/post.md"
+			],
+			[
+				"deathby",
+				"user/pages/blog/death-by-powerpoint/post.md"
+			],
+			[
+				"projects",
+				"user/pages/blog/computing-projects-showcase/post.md"
+			],
+			[
+				"learning",
+				"user/pages/blog/learning-in-2020/post.md"
+			],
+			[
+				"componsing",
+				"user/pages/blog/composing-posting-videos/post.md"
+			],
+			[
+				"the-elephant",
+				"user/pages/blog/the-elephant-in-the-room/post.md"
+			],
+			[
+				"project",
+				"user/pages/blog/computing-projects-showcase/post.md"
+			],
+			[
+				"samsung",
+				"user/pages/blog/samsung-hd-camera-trick/post.md"
+			],
+			[
+				"main.scss",
+				"user/themes/jktheme/scss/main.scss"
+			],
+			[
+				"default",
+				"user/themes/mediator/templates/default.html.twig"
+			],
+			[
+				"postmeta",
+				"user/themes/jktheme/templates/partials/postmeta.html.twig"
+			],
+			[
+				"base",
+				"user/themes/jktheme/templates/partials/base.html.twig"
+			],
+			[
+				"how",
+				"user/pages/blog/how-the-right-brainers-are-taking-over-the-world/post.md"
+			],
+			[
+				"optimising",
+				"user/pages/blog/optimising-web-sites/post.md"
+			],
+			[
+				"flat-file",
+				"user/pages/blog/flat-file-cms/post.md"
+			],
+			[
+				"drupal",
+				"user/pages/blog/drupal-a-fragile-creature/post.md"
+			],
+			[
+				"computing",
+				"user/pages/blog/computing-projects-showcase/post.md"
+			],
+			[
+				"relate",
+				"user/config/plugins/relatedpages.yaml"
+			],
+			[
+				"main.scs",
+				"user/themes/jktheme/scss/main.scss"
+			],
+			[
+				"post.ht",
+				"user/themes/jktheme/templates/post.html.twig"
+			],
+			[
+				"about.md",
+				"user/pages/about/page.md"
+			],
+			[
+				".giti",
+				"user/plugins/mediaembed/.gitignore"
+			],
+			[
+				"webdevel",
+				"user/pages/blog/proposed-web-development-programme/post.md"
 			],
 			[
 				"base.ht",
@@ -1173,18 +1850,6 @@
 			[
 				".htacc",
 				".htaccess"
-			],
-			[
-				"base",
-				"user/themes/jktheme/templates/partials/base.html.twig"
-			],
-			[
-				"postmeta",
-				"user/themes/mediator/templates/partials/postmeta.html.twig"
-			],
-			[
-				"post.html",
-				"user/themes/jktheme/templates/post.html.twig"
 			],
 			[
 				"site.",
@@ -1205,14 +1870,6 @@
 			[
 				"main.css",
 				"user/themes/jktheme/css/main.css"
-			],
-			[
-				"main.scss",
-				"user/themes/mediator/scss/main.scss"
-			],
-			[
-				"localhost",
-				"user/pages/blog/localhost-options/post.md"
 			],
 			[
 				"site",
@@ -1249,10 +1906,6 @@
 			[
 				"config",
 				"user/config/system.yaml"
-			],
-			[
-				"projects",
-				"user/themes/canvas/templates/projects.html.twig"
 			],
 			[
 				"projecta",
@@ -1369,302 +2022,6 @@
 			[
 				"plcdeta",
 				"app/views/partials/placement_type/placement_type_details.html"
-			],
-			[
-				"studentadd",
-				"app/scripts/controllers/student/studentAddCtrl.js"
-			],
-			[
-				"studentedit",
-				"app/scripts/controllers/student/studentEditCtrl.js"
-			],
-			[
-				"tutors.",
-				"app/views/tutors.html"
-			],
-			[
-				"tutordet",
-				"app/views/partials/tutor/tutor_details.html"
-			],
-			[
-				"tutordeta",
-				"app/views/partials/tutor/tutor_details.html"
-			],
-			[
-				"tutoredit",
-				"app/views/partials/tutor/tutor_edit.html"
-			],
-			[
-				"data_tutor",
-				"app/scripts/services/data_tutors.js"
-			],
-			[
-				"data_tutor.js",
-				"app/scripts/services/data_tutors.js"
-			],
-			[
-				"programmedet",
-				"app/scripts/controllers/programme/programmeDetailsCtrl.js"
-			],
-			[
-				"tutor_det",
-				"app/views/partials/tutor/tutor_details.html"
-			],
-			[
-				"tutors.ht",
-				"app/views/tutors.html"
-			],
-			[
-				"tutors.js",
-				"app/scripts/controllers/tutor/tutors.js"
-			],
-			[
-				"tutors",
-				"app/views/tutors.html"
-			],
-			[
-				"programmdet",
-				"app/views/partials/programme/programme_details.html"
-			],
-			[
-				"placementstudent",
-				"app/views/partials/placement/placement_details_student.html"
-			],
-			[
-				"data_placed",
-				"app/scripts/services/data_placed.js"
-			],
-			[
-				"data_plac",
-				"app/scripts/services/data_placements.js"
-			],
-			[
-				"daa_stu",
-				"app/scripts/services/data_students.js"
-			],
-			[
-				"placementstude",
-				"app/views/partials/placement/placement_details_student.html"
-			],
-			[
-				"placementdet",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"studentdeta",
-				"app/views/partials/student/student_details.html"
-			],
-			[
-				"students.js",
-				"app/scripts/controllers/student/students.js"
-			],
-			[
-				"data_student",
-				"app/scripts/services/data_students.js"
-			],
-			[
-				"studentdetai",
-				"app/scripts/controllers/student/studentDetailsCtrl.js"
-			],
-			[
-				"student",
-				"app/scripts/controllers/student/students.js"
-			],
-			[
-				"students.html",
-				"app/views/students.html"
-			],
-			[
-				"students",
-				"app/views/students.html"
-			],
-			[
-				"placementdetailstude",
-				"app/views/partials/placement/placement_details_student.html"
-			],
-			[
-				"detailadmin",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"placements.h",
-				"app/views/placements.html"
-			],
-			[
-				"placementedit",
-				"app/scripts/controllers/placement/placementEditCtrl.js"
-			],
-			[
-				"data_place",
-				"app/scripts/services/data_placed.js"
-			],
-			[
-				"placement_type",
-				"app/views/partials/placement_type/placement_type_details.html"
-			],
-			[
-				"placementdeta",
-				"app/views/partials/placement/placement_details_student.html"
-			],
-			[
-				"providerdeta",
-				"app/views/partials/provider/provider_details.html"
-			],
-			[
-				"provider",
-				"app/views/providers.html"
-			],
-			[
-				"providered",
-				"app/views/partials/provider/provider_edit.html"
-			],
-			[
-				"placementsadmin",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"placements.html",
-				"app/views/placements.html"
-			],
-			[
-				"student.js",
-				"app/scripts/controllers/student/studentEditCtrl.js"
-			],
-			[
-				"data_pla",
-				"app/scripts/services/data_placed.js"
-			],
-			[
-				"placementdetails",
-				"app/scripts/controllers/placement/placementDetailsCtrl.js"
-			],
-			[
-				"placementtyp",
-				"app/views/placement_types.html"
-			],
-			[
-				"providers.",
-				"app/views/providers.html"
-			],
-			[
-				"placements.ht",
-				"app/views/placements.html"
-			],
-			[
-				"bootflat/glob",
-				"app/bower_components/Bootflat/bootflat/scss/bootflat/_global.scss"
-			],
-			[
-				"detailctrl",
-				"app/scripts/controllers/placement/placementDetailsCtrl.js"
-			],
-			[
-				"data_t",
-				"app/scripts/services/data_tutors.js"
-			],
-			[
-				"data_turor",
-				"node_modules/grunt-google-cdn/node_modules/bower/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js"
-			],
-			[
-				"stude",
-				"app/scripts/controllers/student/students.js"
-			],
-			[
-				"placements.",
-				"app/views/placements.html"
-			],
-			[
-				"placements.htm",
-				"app/views/placements.html"
-			],
-			[
-				"programmdeta",
-				"app/views/partials/programme/programme_details.html"
-			],
-			[
-				"data_placemen",
-				"app/scripts/services/data_placements.js"
-			],
-			[
-				"placementadd",
-				"app/scripts/controllers/placement/placementAddCtrl.js"
-			],
-			[
-				"details.html",
-				"app/views/partials/programme/programme_details.html"
-			],
-			[
-				"placementstud",
-				"app/views/partials/placement/placement_details_student.html"
-			],
-			[
-				"placementdetailadmin",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"plcaementdeta",
-				"app/views/partials/placement/placement_details.html"
-			],
-			[
-				"placementadmin",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"index.htm",
-				"app/index.html"
-			],
-			[
-				"sps_placemet",
-				"app/scripts/services/data_placements.js"
-			],
-			[
-				"custom.scss",
-				"app/styles/sass/_custom.scss"
-			],
-			[
-				"homeadmin",
-				"app/views/partials/s/home_admin.html"
-			],
-			[
-				"index.",
-				"app/index.html"
-			],
-			[
-				"index.ht",
-				"app/index.html"
-			],
-			[
-				"homecon",
-				"app/scripts/controllers/homeController.js"
-			],
-			[
-				"count",
-				"app/scripts/directives/count-to.js"
-			],
-			[
-				"homestu",
-				"app/views/partials/s/home_student.html"
-			],
-			[
-				"homeuna",
-				"app/views/partials/s/home_unauth.html"
-			],
-			[
-				"data_pr",
-				"app/scripts/services/data_programmes.js"
-			],
-			[
-				"data_programm",
-				"app/scripts/services/data_programmes.js"
-			],
-			[
-				"homead",
-				"app/views/partials/s/home_admin.html"
-			],
-			[
-				"login",
-				"app/views/login.html"
 			]
 		],
 		"width": 0.0
@@ -1677,7 +2034,7 @@
 		[
 			[
 				"",
-				"~/Documents/dev/sps/sps.sublime-workspace"
+				"~/Sites/class.jkelleher.me/clsss.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1695,11 +2052,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 268.0,
+	"side_bar_visible": false,
+	"side_bar_width": 253.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

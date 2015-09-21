@@ -2,19 +2,18 @@
 title: Learning in 2020
 date: 2009/11/19 19:55:00
 taxonomy: 
- category: blog 
+ tag: [education]
 ---
-
 Recently we had some thought-provoking discussion about the future of a particular programme. Central to the debate was the skills our future graduate would possess (or should). Working in the tech field, it’s important to try to see as far to the horizon as possible. As [Ferris Bueller](http://www.imdb.com/title/tt0091042/quotes) put it so well: “Life moves pretty fast. You don't stop and look around once in a while, you could miss it.” It got me thinking about how we might prepare this mythical graduate for the world beyond. The world of the student over the coming years is changing rapidly. I think tech teaching is something of the canary in the mine – we’re seeing a marked reduction in the shelf-life for information. Books no longer capture the pulse of the industry. The landscape changes so rapidly that tech shifts are measured in months not years. The way we identify, the way we gather, the way we discriminate, disseminate and educate as well as assess, evaluate and motivate is set to change.
 
-![](http://lh4.ggpht.com/_-8eBgLSYyzA/SwWitYjJqiI/AAAAAAAAFHc/RAHPOA_4sqc/video9ff7d2c1b94c%5B4%5D.jpg?imgmax=800)[</param></embed></object></div>";" alt="">](http://www.youtube.com/watch?v=dGCJ46vyR9o)
+<iframe width="960" height="720" src="https://www.youtube.com/embed/dGCJ46vyR9o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 
 **Pop-fact**: While search engines (like Google, Bing) account for 37% of our step-off point for new information, 18% of us now use social media sites (blogs, Wikipedia, social-networking) to spearhead our research. We spend 10% of our online time in social-networking sites.
 
 Reading Nade Oslo’s [recent talk](http://www.slideshare.net/gsiemens/nade-oslo?yourdomain=gmail) (at bottom), I came across this particular slide which neatly identifies the challenges ahead.
 
-![Nade Oslo Future Education Tensions](http://lh3.ggpht.com/_-8eBgLSYyzA/SwWivJxBbvI/AAAAAAAAFHk/jfKvlP_eKCE/image_thumb%5B2%5D.png?imgmax=800)
-
+![Nade Oslo Future Education Tensions](chart.png)
 Oslo sees that the raw material of our education service is not solely self-generated but will increasingly derive from the community (of course, we are part of that community and will/do contribute). But the pace of change will progressively necessitate us mining the incredible rich vein of knowledge that lives on the net. This mining, while leading to a rich, current and relevant diet of material for our students will require up-skilling in techniques to extract this information. Right now, we’re not fully acknowledging this ‘tension point’ #1, as Oslo puts it.
 
 Oslo’s #2 Tension Point is where we often misunderstand the notion of online learning. The prospect of developing sophisticated online material is often cited as an impediment to moving online. Such investments are neither practical nor affordable and don’t respect or appreciate the substantial contribution from the web community. Speaking from the perspective of computing (though I doubt other disciplines differ here), changes in tech outpace our capacity to absorb the material, let alone our ability to amalgamate and re-package it for consumption by our students. The tension point lies in marshalling technology to bind together online resources (once identified) making pathways through for our students to follow.

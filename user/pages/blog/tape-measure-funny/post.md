@@ -2,10 +2,10 @@
 title: Tape Measure funny
 date: 2010/01/06 19:27:00
 taxonomy: 
- category: blog 
+ tag: fun
 ---
 
-![](http://lh4.ggpht.com/_-8eBgLSYyzA/S0TkFUreQVI/AAAAAAAAips/wK5vgk_fssA/video0f16aa99e928%5B2%5D.jpg?imgmax=800)[</param></embed></object></div>";" alt="">](http://www.youtube.com/watch?v=Wx_5GI0QRdw&feature=player_embedded)
+<iframe width="853" height="480" src="https://www.youtube.com/embed/Wx_5GI0QRdw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Comments
 

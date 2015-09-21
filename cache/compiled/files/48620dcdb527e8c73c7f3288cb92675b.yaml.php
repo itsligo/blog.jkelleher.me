@@ -2,10 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/config/system.yaml',
-    'modified' => 1439549269,
+    'modified' => 1442859860,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
+        'default_locale' => NULL,
         'param_sep' => ':',
         'languages' => [
             'supported' => [
@@ -17,7 +18,9 @@ return [
             'home_redirect' => [
                 'include_lang' => true,
                 'include_route' => false
-            ]
+            ],
+            'http_accept_language' => false,
+            'override_locale' => false
         ],
         'home' => [
             'alias' => '/home'
@@ -32,6 +35,7 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
+                'default' => NULL,
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -66,7 +70,15 @@ return [
             'last_modified' => false,
             'etag' => false,
             'vary_accept_encoding' => false,
-            'redirect_default_route' => false
+            'redirect_default_route' => false,
+            'redirect_trailing_slash' => true,
+            'ignore_files' => [
+                0 => '.DS_Store'
+            ],
+            'ignore_folders' => [
+                0 => '.git',
+                1 => '.idea'
+            ]
         ],
         'cache' => [
             'enabled' => true,
@@ -104,7 +116,6 @@ return [
         ],
         'debugger' => [
             'enabled' => false,
-            'twig' => true,
             'shutdown' => [
                 'close_connection' => true
             ]

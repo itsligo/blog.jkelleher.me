@@ -2,8 +2,21 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/languages/en.yaml',
-    'modified' => 1439547779,
+    'modified' => 1442859860,
     'data' => [
+        'FRONTMATTER_ERROR_PAGE' => '---
+title: %1$s
+---
+
+# Error: Invalid Frontmatter
+
+Path: `%2$s`
+
+**%3$s**
+
+```
+%4$s
+```',
         'INFLECTOR_PLURALS' => [
             '/(quiz)$/i' => '\\1zes',
             '/^(ox)$/i' => '\\1en',

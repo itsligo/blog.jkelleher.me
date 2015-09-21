@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/pagination/blueprints.yaml',
-    'modified' => 1437742390,
+    'modified' => 1441294784,
     'data' => [
         'name' => 'Pagination',
-        'version' => '1.2.7',
+        'version' => '1.3.1',
         'description' => '**Pagination** is a very useful plugin to help navigate a large collection of pages, such as for a **blog**.',
         'icon' => 'list-ol',
         'author' => [
@@ -31,6 +31,17 @@ return [
                     ],
                     'validate' => [
                         'type' => 'bool'
+                    ]
+                ],
+                'delta' => [
+                    'type' => 'text',
+                    'size' => 'x-small',
+                    'label' => 'Delta',
+                    'default' => 0,
+                    'help' => 'How many pages to show left and right of the current page',
+                    'validate' => [
+                        'type' => 'number',
+                        'min' => 0
                     ]
                 ],
                 'built_in_css' => [

@@ -2,39 +2,39 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/blueprints/config/system.yaml',
-    'modified' => 1439547779,
+    'modified' => 1442859860,
     'data' => [
-        'title' => 'System',
+        'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
             'validation' => 'loose',
             'fields' => [
                 'content' => [
                     'type' => 'section',
-                    'title' => 'Content',
+                    'title' => 'PLUGIN_ADMIN.CONTENT',
                     'underline' => true,
                     'fields' => [
                         'home.alias' => [
                             'type' => 'pages',
                             'size' => 'medium',
                             'classes' => 'fancy',
-                            'label' => 'Home page',
+                            'label' => 'PLUGIN_ADMIN.HOME_PAGE',
                             'show_all' => false,
                             'show_modular' => false,
                             'show_root' => false,
-                            'help' => 'The page that Grav will use as the default landing page'
+                            'help' => 'PLUGIN_ADMIN.HOME_PAGE_HELP'
                         ],
                         'pages.theme' => [
                             'type' => 'themeselect',
                             'classes' => 'fancy',
                             'selectize' => true,
                             'size' => 'medium',
-                            'label' => 'Default theme',
-                            'help' => 'Set the default theme for Grav to use (default is Antimatter)'
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_THEME',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_THEME_HELP'
                         ],
                         'pages.process' => [
                             'type' => 'checkboxes',
-                            'label' => 'Process',
-                            'help' => 'Control how pages are processed. Can be set per-page rather than globally',
+                            'label' => 'PLUGIN_ADMIN.PROCESS',
+                            'help' => 'PLUGIN_ADMIN.PROCESS_HELP',
                             'default' => [
                                 0 => [
                                     'markdown' => true
@@ -51,26 +51,43 @@ return [
                         ],
                         'timezone' => [
                             'type' => 'select',
-                            'label' => 'Timezone',
+                            'label' => 'PLUGIN_ADMIN.TIMEZONE',
                             'size' => 'medium',
                             'classes' => 'fancy',
-                            'help' => 'Override the default timezone the server',
+                            'help' => 'PLUGIN_ADMIN.TIMEZONE_HELP',
                             '@data-options' => '\\Grav\\Common\\Utils::timezones',
                             'default' => '',
                             'options' => [
                                 '' => 'Default (Server Timezone)'
                             ]
                         ],
+                        'pages.dateformat.default' => [
+                            'type' => 'select',
+                            'size' => 'medium',
+                            'selectize' => [
+                                'create' => true
+                            ],
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT_HELP',
+                            'placeholder' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT_PLACEHOLDER',
+                            '@data-options' => '\\Grav\\Common\\Utils::dateFormats',
+                            'options' => [
+                                '' => 'Auto Guess or Enter Custom'
+                            ],
+                            'validate' => [
+                                'type' => 'string'
+                            ]
+                        ],
                         'pages.dateformat.short' => [
                             'type' => 'dateformat',
                             'size' => 'medium',
                             'classes' => 'fancy',
-                            'label' => 'Short date format',
-                            'help' => 'Set the short date format that can be used by themes',
+                            'label' => 'PLUGIN_ADMIN.SHORT_DATE_FORMAT',
+                            'help' => 'PLUGIN_ADMIN.SHORT_DATE_FORMAT_HELP',
                             'default' => 'jS M Y',
                             'options' => [
                                 'F jS \\a\\t g:ia' => 'Date1',
-                                'l jS of F g:i A' => 'Date2',
+                                'l jS \\of F g:i A' => 'Date2',
                                 'D, m M Y G:i:s' => 'Date3',
                                 'd-m-y G:i' => 'Date4',
                                 'jS M Y' => 'Date5'
@@ -80,11 +97,11 @@ return [
                             'type' => 'dateformat',
                             'size' => 'medium',
                             'classes' => 'fancy',
-                            'label' => 'Long date format',
-                            'help' => 'Set the long date format that can be used by themes',
+                            'label' => 'PLUGIN_ADMIN.LONG_DATE_FORMAT',
+                            'help' => 'PLUGIN_ADMIN.LONG_DATE_FORMAT_HELP',
                             'options' => [
                                 'F jS \\a\\t g:ia' => 'Date1',
-                                'l jS of F g:i A' => 'Date2',
+                                'l jS \\of F g:i A' => 'Date2',
                                 'D, m M Y G:i:s' => 'Date3',
                                 'd-m-y G:i' => 'Date4',
                                 'jS M Y' => 'Date5'
@@ -92,33 +109,33 @@ return [
                         ],
                         'pages.order.by' => [
                             'type' => 'select',
-                            'size' => 'medium',
+                            'size' => 'long',
                             'classes' => 'fancy',
-                            'label' => 'Default ordering',
-                            'help' => 'Pages in a list will render using this order unless it is overridden',
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_ORDERING',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_HELP',
                             'options' => [
-                                'default' => 'Default - based on folder name',
-                                'folder' => 'Folder - based on prefix-less folder name',
-                                'title' => 'Title - based on title field in header',
-                                'date' => 'Date - based on date field in header'
+                                'default' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT',
+                                'folder' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER',
+                                'title' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE',
+                                'date' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DATE'
                             ]
                         ],
                         'pages.order.dir' => [
                             'type' => 'toggle',
-                            'label' => 'Default order direction',
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION',
                             'highlight' => 'asc',
                             'default' => 'desc',
-                            'help' => 'The direction of pages in a list',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION_HELP',
                             'options' => [
-                                'asc' => 'Ascending',
-                                'desc' => 'Descending'
+                                'asc' => 'PLUGIN_ADMIN.ASCENDING',
+                                'desc' => 'PLUGIN_ADMIN.DESCENDING'
                             ]
                         ],
                         'pages.list.count' => [
                             'type' => 'text',
                             'size' => 'x-small',
-                            'label' => 'Default page count',
-                            'help' => 'Default maximum pages count in a list',
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_PAGE_COUNT',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_PAGE_COUNT_HELP',
                             'validate' => [
                                 'type' => 'number',
                                 'min' => 1
@@ -126,8 +143,8 @@ return [
                         ],
                         'pages.publish_dates' => [
                             'type' => 'toggle',
-                            'label' => 'Date-based publishing',
-                            'help' => 'Automatically (un)publish posts based on their date',
+                            'label' => 'PLUGIN_ADMIN.DATE_BASED_PUBLISHING',
+                            'help' => 'PLUGIN_ADMIN.DATE_BASED_PUBLISHING_HELP',
                             'highlight' => 1,
                             'options' => [
                                 1 => 'Yes',
@@ -139,8 +156,8 @@ return [
                         ],
                         'pages.events' => [
                             'type' => 'checkboxes',
-                            'label' => 'Events',
-                            'help' => 'Enable or Disable specific events.  Disabling these can break plugins',
+                            'label' => 'PLUGIN_ADMIN.EVENTS',
+                            'help' => 'PLUGIN_ADMIN.EVENTS_HELP',
                             'default' => [
                                 0 => [
                                     'page' => true
@@ -157,29 +174,62 @@ return [
                         ],
                         'pages.redirect_default_route' => [
                             'type' => 'toggle',
-                            'label' => 'Redirect default route',
-                            'help' => 'Automatically redirect to a page\'s default route',
+                            'label' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_ROUTE',
+                            'help' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_ROUTE_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
+                            ]
+                        ],
+                        'pages.redirect_trailing_slash' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.REDIRECT_TRAILING_SLASH',
+                            'help' => 'PLUGIN_ADMIN.REDIRECT_TRAILING_SLASH_HELP',
+                            'highlight' => 1,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'pages.ignore_files' => [
+                            'type' => 'selectize',
+                            'size' => 'large',
+                            'label' => 'PLUGIN_ADMIN.IGNORE_FILES',
+                            'help' => 'PLUGIN_ADMIN.IGNORE_FILES_HELP',
+                            'classes' => 'fancy',
+                            'validate' => [
+                                'type' => 'commalist'
+                            ]
+                        ],
+                        'pages.ignore_folders' => [
+                            'type' => 'selectize',
+                            'size' => 'large',
+                            'label' => 'PLUGIN_ADMIN.IGNORE_FOLDERS',
+                            'help' => 'PLUGIN_ADMIN.IGNORE_FOLDERS_HELP',
+                            'classes' => 'fancy',
+                            'validate' => [
+                                'type' => 'commalist'
                             ]
                         ]
                     ]
                 ],
                 'languages' => [
                     'type' => 'section',
-                    'title' => 'Languages',
+                    'title' => 'PLUGIN_ADMIN.LANGUAGES',
                     'underline' => true,
                     'fields' => [
                         'languages.supported' => [
                             'type' => 'selectize',
                             'size' => 'large',
-                            'label' => 'Supported',
-                            'help' => 'Comma separated list of 2 letter language codes (for example \'en,fr,de\')',
+                            'label' => 'PLUGIN_ADMIN.SUPPORTED',
+                            'help' => 'PLUGIN_ADMIN.SUPPORTED_HELP',
                             'classes' => 'fancy',
                             'validate' => [
                                 'type' => 'commalist'
@@ -187,12 +237,12 @@ return [
                         ],
                         'languages.translations' => [
                             'type' => 'toggle',
-                            'label' => 'Translations enabled',
-                            'help' => 'Support translations in Grav, plugins and extensions',
+                            'label' => 'PLUGIN_ADMIN.TRANSLATIONS_ENABLED',
+                            'help' => 'PLUGIN_ADMIN.TRANSLATIONS_ENABLED_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -200,12 +250,12 @@ return [
                         ],
                         'languages.translations_fallback' => [
                             'type' => 'toggle',
-                            'label' => 'Translations fallback',
-                            'help' => 'Fallback through supported translations if active language doesn\'t exist',
+                            'label' => 'PLUGIN_ADMIN.TRANSLATIONS_FALLBACK',
+                            'help' => 'PLUGIN_ADMIN.TRANSLATIONS_FALLBACK_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -213,12 +263,12 @@ return [
                         ],
                         'languages.session_store_active' => [
                             'type' => 'toggle',
-                            'label' => 'Active language in session',
-                            'help' => 'Store the active language in the session',
+                            'label' => 'PLUGIN_ADMIN.ACTIVE_LANGUAGE_IN_SESSION',
+                            'help' => 'PLUGIN_ADMIN.ACTIVE_LANGUAGE_IN_SESSION_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -226,12 +276,12 @@ return [
                         ],
                         'languages.home_redirect.include_lang' => [
                             'type' => 'toggle',
-                            'label' => 'Home redirect include language',
-                            'help' => 'Include language in home redirect (/en)',
+                            'label' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_LANGUAGE',
+                            'help' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_LANGUAGE_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -239,12 +289,38 @@ return [
                         ],
                         'languages.home_redirect.include_route' => [
                             'type' => 'toggle',
-                            'label' => 'Home redirect include route',
-                            'help' => 'Include route in home redirect (/blog)',
+                            'label' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_ROUTE',
+                            'help' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_ROUTE_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'languages.http_accept_language' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.HTTP_ACCEPT_LANGUAGE',
+                            'help' => 'PLUGIN_ADMIN.HTTP_ACCEPT_LANGUAGE_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'languages.override_locale' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.OVERRIDE_LOCALE',
+                            'help' => 'PLUGIN_ADMIN.OVERRIDE_LOCALE_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -254,14 +330,14 @@ return [
                 ],
                 'http_headers' => [
                     'type' => 'section',
-                    'title' => 'HTTP Headers',
+                    'title' => 'PLUGIN_ADMIN.HTTP_HEADERS',
                     'underline' => true,
                     'fields' => [
                         'pages.expires' => [
                             'type' => 'text',
                             'size' => 'small',
-                            'label' => 'Expires',
-                            'help' => 'Sets the expires header. The value is in seconds.',
+                            'label' => 'PLUGIN_ADMIN.EXPIRES',
+                            'help' => 'PLUGIN_ADMIN.EXPIRES_HELP',
                             'validate' => [
                                 'type' => 'number',
                                 'min' => 1
@@ -269,12 +345,12 @@ return [
                         ],
                         'pages.last_modified' => [
                             'type' => 'toggle',
-                            'label' => 'Last modified',
-                            'help' => 'Sets the last modified header that can help optimize proxy and browser caching',
+                            'label' => 'PLUGIN_ADMIN.LAST_MODIFIED',
+                            'help' => 'PLUGIN_ADMIN.LAST_MODIFIED_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -282,12 +358,12 @@ return [
                         ],
                         'pages.etag' => [
                             'type' => 'toggle',
-                            'label' => 'ETag',
-                            'help' => 'Sets the etag header to help identify when a page has been modified',
+                            'label' => 'PLUGIN_ADMIN.ETAG',
+                            'help' => 'PLUGIN_ADMIN.ETAG_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -295,12 +371,12 @@ return [
                         ],
                         'pages.vary_accept_encoding' => [
                             'type' => 'toggle',
-                            'label' => 'Vary accept encoding',
-                            'help' => 'Sets the `Vary: Accept Encoding` header to help with proxy and CDN caching',
+                            'label' => 'PLUGIN_ADMIN.VARY_ACCEPT_ENCODING',
+                            'help' => 'PLUGIN_ADMIN.VARY_ACCEPT_ENCODING_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -316,11 +392,11 @@ return [
                         'pages.markdown.extra' => [
                             'type' => 'toggle',
                             'label' => 'Markdown extra',
-                            'help' => 'Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/',
+                            'help' => 'PLUGIN_ADMIN.MARKDOWN_EXTRA_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -328,12 +404,12 @@ return [
                         ],
                         'pages.markdown.auto_line_breaks' => [
                             'type' => 'toggle',
-                            'label' => 'Auto line breaks',
-                            'help' => 'Enable support for automatic line breaks in markdown',
+                            'label' => 'PLUGIN_ADMIN.AUTO_LINE_BREAKS',
+                            'help' => 'PLUGIN_ADMIN.AUTO_LINE_BREAKS_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -341,12 +417,12 @@ return [
                         ],
                         'pages.markdown.auto_url_links' => [
                             'type' => 'toggle',
-                            'label' => 'Auto URL links',
-                            'help' => 'Enable automatic conversion of URLs into HTML hyperlinks',
+                            'label' => 'PLUGIN_ADMIN.AUTO_URL_LINKS',
+                            'help' => 'PLUGIN_ADMIN.AUTO_URL_LINKS_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -354,12 +430,12 @@ return [
                         ],
                         'pages.markdown.escape_markup' => [
                             'type' => 'toggle',
-                            'label' => 'Escape markup',
-                            'help' => 'Escape markup tags into HTML entities',
+                            'label' => 'PLUGIN_ADMIN.ESCAPE_MARKUP',
+                            'help' => 'PLUGIN_ADMIN.ESCAPE_MARKUP_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -369,17 +445,17 @@ return [
                 ],
                 'caching' => [
                     'type' => 'section',
-                    'title' => 'Caching',
+                    'title' => 'PLUGIN_ADMIN.CACHING',
                     'underline' => true,
                     'fields' => [
                         'cache.enabled' => [
                             'type' => 'toggle',
-                            'label' => 'Caching',
-                            'help' => 'Global ON/OFF switch to enable/disable Grav caching',
+                            'label' => 'PLUGIN_ADMIN.CACHING',
+                            'help' => 'PLUGIN_ADMIN.CACHING_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -389,8 +465,8 @@ return [
                             'type' => 'select',
                             'size' => 'small',
                             'classes' => 'fancy',
-                            'label' => 'Cache check method',
-                            'help' => 'Select the method that Grav uses to check if page files have been modified.',
+                            'label' => 'PLUGIN_ADMIN.CACHE_CHECK_METHOD',
+                            'help' => 'PLUGIN_ADMIN.CACHE_CHECK_METHOD_HELP',
                             'options' => [
                                 'file' => 'File',
                                 'folder' => 'Folder',
@@ -401,8 +477,8 @@ return [
                             'type' => 'select',
                             'size' => 'small',
                             'classes' => 'fancy',
-                            'label' => 'Cache driver',
-                            'help' => 'Choose which cache driver Grav should use. \'Auto Detect\' attempts to find the best for you',
+                            'label' => 'PLUGIN_ADMIN.CACHE_DRIVER',
+                            'help' => 'PLUGIN_ADMIN.CACHE_DRIVER_HELP',
                             'options' => [
                                 'auto' => 'Auto detect',
                                 'file' => 'File',
@@ -415,27 +491,27 @@ return [
                         'cache.prefix' => [
                             'type' => 'text',
                             'size' => 'x-small',
-                            'label' => 'Cache prefix',
-                            'help' => 'An identifier for part of the Grav key.  Don\'t change unless you know what your doing.',
-                            'placeholder' => 'Derived from base URL (override by entering random string)'
+                            'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
+                            'help' => 'PLUGIN_ADMIN.CACHE_PREFIX_HELP',
+                            'placeholder' => 'PLUGIN_ADMIN.CACHE_PREFIX_PLACEHOLDER'
                         ],
                         'cache.lifetime' => [
                             'type' => 'text',
                             'size' => 'small',
-                            'label' => 'Lifetime',
-                            'help' => 'Sets the cache lifetime in seconds. 0 = infinite',
+                            'label' => 'PLUGIN_ADMIN.LIFETIME',
+                            'help' => 'PLUGIN_ADMIN.LIFETIME_HELP',
                             'validate' => [
                                 'type' => 'number'
                             ]
                         ],
                         'cache.gzip' => [
                             'type' => 'toggle',
-                            'label' => 'Gzip compression',
-                            'help' => 'Enable GZip compression of the Grav page for increased performance.',
+                            'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
+                            'help' => 'PLUGIN_ADMIN.GZIP_COMPRESSION_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -445,17 +521,17 @@ return [
                 ],
                 'twig' => [
                     'type' => 'section',
-                    'title' => 'Twig Templating',
+                    'title' => 'PLUGIN_ADMIN.TWIG_TEMPLATING',
                     'underline' => true,
                     'fields' => [
                         'twig.cache' => [
                             'type' => 'toggle',
-                            'label' => 'Twig caching',
-                            'help' => 'Control the Twig caching mechanism. Leave this enabled for best performance.',
+                            'label' => 'PLUGIN_ADMIN.TWIG_CACHING',
+                            'help' => 'PLUGIN_ADMIN.TWIG_CACHING_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -463,12 +539,12 @@ return [
                         ],
                         'twig.debug' => [
                             'type' => 'toggle',
-                            'label' => 'Twig debug',
-                            'help' => 'Allows the option of not loading the Twig Debugger extension',
+                            'label' => 'PLUGIN_ADMIN.TWIG_DEBUG',
+                            'help' => 'PLUGIN_ADMIN.TWIG_DEBUG_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -476,12 +552,12 @@ return [
                         ],
                         'twig.auto_reload' => [
                             'type' => 'toggle',
-                            'label' => 'Detect changes',
-                            'help' => 'Twig will automatically recompile the Twig cache if it detects any changes in Twig templates',
+                            'label' => 'PLUGIN_ADMIN.DETECT_CHANGES',
+                            'help' => 'PLUGIN_ADMIN.DETECT_CHANGES_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -489,12 +565,12 @@ return [
                         ],
                         'twig.autoescape' => [
                             'type' => 'toggle',
-                            'label' => 'Autoescape variables',
-                            'help' => 'Autoescapes all variables.  This will break your site most likely',
+                            'label' => 'PLUGIN_ADMIN.AUTOESCAPE_VARIABLES',
+                            'help' => 'PLUGIN_ADMIN.AUTOESCAPE_VARIABLES_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -504,17 +580,17 @@ return [
                 ],
                 'assets' => [
                     'type' => 'section',
-                    'title' => 'Assets',
+                    'title' => 'PLUGIN_ADMIN.ASSETS',
                     'underline' => true,
                     'fields' => [
                         'assets.css_pipeline' => [
                             'type' => 'toggle',
-                            'label' => 'CSS pipeline',
-                            'help' => 'The CSS pipeline is the unification of multiple CSS resources into one file',
+                            'label' => 'PLUGIN_ADMIN.CSS_PIPELINE',
+                            'help' => 'PLUGIN_ADMIN.CSS_PIPELINE_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -522,12 +598,12 @@ return [
                         ],
                         'assets.css_minify' => [
                             'type' => 'toggle',
-                            'label' => 'CSS minify',
-                            'help' => 'Minify the CSS during pipelining',
+                            'label' => 'PLUGIN_ADMIN.CSS_MINIFY',
+                            'help' => 'PLUGIN_ADMIN.CSS_MINIFY_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -535,12 +611,12 @@ return [
                         ],
                         'assets.css_minify_windows' => [
                             'type' => 'toggle',
-                            'label' => 'CSS minify Windows override',
-                            'help' => 'Minify Override for Windows platforms. False by default due to ThreadStackSize',
+                            'label' => 'PLUGIN_ADMIN.CSS_MINIFY_WINDOWS_OVERRIDE',
+                            'help' => 'PLUGIN_ADMIN.CSS_MINIFY_WINDOWS_OVERRIDE_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -548,12 +624,12 @@ return [
                         ],
                         'assets.css_rewrite' => [
                             'type' => 'toggle',
-                            'label' => 'CSS rewrite',
-                            'help' => 'Rewrite any CSS relative URLs during pipelining',
+                            'label' => 'PLUGIN_ADMIN.CSS_REWRITE',
+                            'help' => 'PLUGIN_ADMIN.CSS_REWRITE_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -561,12 +637,12 @@ return [
                         ],
                         'assets.js_pipeline' => [
                             'type' => 'toggle',
-                            'label' => 'JavaScript pipeline',
-                            'help' => 'The JS pipeline is the unification of multiple JS resources into one file',
+                            'label' => 'PLUGIN_ADMIN.JAVASCRIPT_PIPELINE',
+                            'help' => 'PLUGIN_ADMIN.JAVASCRIPT_PIPELINE_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -574,12 +650,12 @@ return [
                         ],
                         'assets.js_minify' => [
                             'type' => 'toggle',
-                            'label' => 'JavaScript minify',
-                            'help' => 'Minify the JS during pipelining',
+                            'label' => 'PLUGIN_ADMIN.JAVASCRIPT_MINIFY',
+                            'help' => 'PLUGIN_ADMIN.JAVASCRIPT_MINIFY_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -587,12 +663,12 @@ return [
                         ],
                         'assets.enable_asset_timestamp' => [
                             'type' => 'toggle',
-                            'label' => 'Enable timestamps on assets',
-                            'help' => 'Enable asset timestamps',
+                            'label' => 'PLUGIN_ADMIN.ENABLED_TIMESTAMPS_ON_ASSETS',
+                            'help' => 'PLUGIN_ADMIN.ENABLED_TIMESTAMPS_ON_ASSETS_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -600,7 +676,7 @@ return [
                         ],
                         'assets.collections' => [
                             'type' => 'array',
-                            'label' => 'Collections',
+                            'label' => 'PLUGIN_ADMIN.COLLECTIONS',
                             'placeholder_key' => 'collection_name',
                             'placeholder_value' => 'collection_path'
                         ]
@@ -608,17 +684,17 @@ return [
                 ],
                 'errors' => [
                     'type' => 'section',
-                    'title' => 'Error handler',
+                    'title' => 'PLUGIN_ADMIN.ERROR_HANDLER',
                     'underline' => true,
                     'fields' => [
                         'errors.display' => [
                             'type' => 'toggle',
-                            'label' => 'Display errors',
-                            'help' => 'Display full backtrace-style error page',
+                            'label' => 'PLUGIN_ADMIN.DISPLAY_ERRORS',
+                            'help' => 'PLUGIN_ADMIN.DISPLAY_ERRORS_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -626,12 +702,12 @@ return [
                         ],
                         'errors.log' => [
                             'type' => 'toggle',
-                            'label' => 'Log errors',
-                            'help' => 'Log errors to /logs folder',
+                            'label' => 'PLUGIN_ADMIN.LOG_ERRORS',
+                            'help' => 'PLUGIN_ADMIN.LOG_ERRORS_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -641,30 +717,17 @@ return [
                 ],
                 'debugger' => [
                     'type' => 'section',
-                    'title' => 'Debugger',
+                    'title' => 'PLUGIN_ADMIN.DEBUGGER',
                     'underline' => true,
                     'fields' => [
                         'debugger.enabled' => [
                             'type' => 'toggle',
-                            'label' => 'Debugger',
-                            'help' => 'Enable Grav debugger and following settings',
+                            'label' => 'PLUGIN_ADMIN.DEBUGGER',
+                            'help' => 'PLUGIN_ADMIN.DEBUGGER_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
-                            ],
-                            'validate' => [
-                                'type' => 'bool'
-                            ]
-                        ],
-                        'debugger.twig' => [
-                            'type' => 'toggle',
-                            'label' => 'Debug Twig',
-                            'help' => 'Enable debugging of Twig templates',
-                            'highlight' => 1,
-                            'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -672,12 +735,12 @@ return [
                         ],
                         'debugger.shutdown.close_connection' => [
                             'type' => 'toggle',
-                            'label' => 'Shutdown close connection',
-                            'help' => 'Close the connection before calling onShutdown(). false for debugging',
+                            'label' => 'PLUGIN_ADMIN.SHUTDOWN_CLOSE_CONNECTION',
+                            'help' => 'PLUGIN_ADMIN.SHUTDOWN_CLOSE_CONNECTION_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -687,13 +750,13 @@ return [
                 ],
                 'media' => [
                     'type' => 'section',
-                    'title' => 'Media',
+                    'title' => 'PLUGIN_ADMIN.MEDIA',
                     'underline' => true,
                     'fields' => [
                         'images.default_image_quality' => [
                             'type' => 'text',
-                            'label' => 'Default image quality',
-                            'help' => 'Default image quality to use when resampling or caching images (85%)',
+                            'label' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY',
+                            'help' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY_HELP',
                             'classes' => 'x-small',
                             'validate' => [
                                 'type' => 'number',
@@ -703,12 +766,12 @@ return [
                         ],
                         'images.cache_all' => [
                             'type' => 'toggle',
-                            'label' => 'Cache all images',
-                            'help' => 'Run all images through Grav\'s cache system even if they have no media manipulations',
+                            'label' => 'PLUGIN_ADMIN.CACHE_ALL',
+                            'help' => 'PLUGIN_ADMIN.CACHE_ALL_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -716,12 +779,12 @@ return [
                         ],
                         'images.debug' => [
                             'type' => 'toggle',
-                            'label' => 'Image debug watermark',
-                            'help' => 'Show an overlay over images indicating the pixel depth of the image when working with retina for example',
+                            'label' => 'PLUGIN_ADMIN.IMAGES_DEBUG',
+                            'help' => 'PLUGIN_ADMIN.IMAGES_DEBUG_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -729,8 +792,8 @@ return [
                         ],
                         'media.upload_limit' => [
                             'type' => 'text',
-                            'label' => 'File upload limit',
-                            'help' => 'Set maximum upload size in bytes (0 is unlimited)',
+                            'label' => 'PLUGIN_ADMIN.UPLOAD_LIMIT',
+                            'help' => 'PLUGIN_ADMIN.UPLOAD_LIMIT_HELP',
                             'classes' => 'small',
                             'validate' => [
                                 'type' => 'number'
@@ -738,12 +801,12 @@ return [
                         ],
                         'media.enable_media_timestamp' => [
                             'type' => 'toggle',
-                            'label' => 'Enable timestamps on media',
-                            'help' => 'Appends a timestamp based on last modified date to each media item',
+                            'label' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP',
+                            'help' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP_HELP',
                             'highlight' => 0,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -753,17 +816,17 @@ return [
                 ],
                 'session' => [
                     'type' => 'section',
-                    'title' => 'Session',
+                    'title' => 'PLUGIN_ADMIN.SESSION',
                     'underline' => true,
                     'fields' => [
                         'session.enabled' => [
                             'type' => 'toggle',
-                            'label' => 'Enabled',
-                            'help' => 'Enable session support within Grav',
+                            'label' => 'PLUGIN_ADMIN.ENABLED',
+                            'help' => 'PLUGIN_ADMIN.SESSION_ENABLED_HELP',
                             'highlight' => 1,
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -772,8 +835,8 @@ return [
                         'session.timeout' => [
                             'type' => 'text',
                             'size' => 'small',
-                            'label' => 'Timeout',
-                            'help' => 'Sets the session timeout in seconds',
+                            'label' => 'PLUGIN_ADMIN.TIMEOUT',
+                            'help' => 'PLUGIN_ADMIN.TIMEOUT_HELP',
                             'validate' => [
                                 'type' => 'number',
                                 'min' => 1
@@ -782,24 +845,24 @@ return [
                         'session.name' => [
                             'type' => 'text',
                             'size' => 'small',
-                            'label' => 'Name',
-                            'help' => 'An identifier used to form the name of the session cookie'
+                            'label' => 'PLUGIN_ADMIN.NAME',
+                            'help' => 'PLUGIN_ADMIN.SESSION_NAME_HELP'
                         ]
                     ]
                 ],
                 'advanced' => [
                     'type' => 'section',
-                    'title' => 'Advanced',
+                    'title' => 'PLUGIN_ADMIN.ADVANCED',
                     'underline' => true,
                     'fields' => [
                         'absolute_urls' => [
                             'type' => 'toggle',
-                            'label' => 'Absolute URLs',
+                            'label' => 'PLUGIN_ADMIN.ABSOLUTE_URLS',
                             'highlight' => 0,
-                            'help' => 'Absolute or relative URLs for `base_url`',
+                            'help' => 'PLUGIN_ADMIN.ABSOLUTE_URLS_HELP',
                             'options' => [
-                                1 => 'Yes',
-                                0 => 'No'
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
                             ],
                             'validate' => [
                                 'type' => 'bool'
@@ -807,9 +870,9 @@ return [
                         ],
                         'param_sep' => [
                             'type' => 'select',
-                            'label' => 'Parameter separator',
+                            'label' => 'PLUGIN_ADMIN.PARAMETER_SEPARATOR',
                             'classes' => 'fancy',
-                            'help' => 'Separater for passed parameters that can be changed for Apache on Windows',
+                            'help' => 'PLUGIN_ADMIN.PARAMETER_SEPARATOR_HELP',
                             'default' => '',
                             'options' => [
                                 ':' => ': (default)',

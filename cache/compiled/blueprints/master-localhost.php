@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '0037e3063969e46f8cdf1b84e99c82c2:41040c1625082c79d749fabd0ff5c584',
+    'checksum' => '0037e3063969e46f8cdf1b84e99c82c2:4fbe988615f49ada05d9dd5b42b3cf1b',
     'files' => [
         'user/plugins' => [
             'plugins/cachebuster' => [
@@ -10,11 +10,11 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1437742390
+                'modified' => 1441294781
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/blueprints.yaml',
-                'modified' => 1437742390
+                'modified' => 1441294783
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/blueprints.yaml',
@@ -26,34 +26,50 @@ return [
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/blueprints.yaml',
-                'modified' => 1437742390
+                'modified' => 1441294784
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1437742390
+                'modified' => 1441294786
+            ],
+            'plugins/random' => [
+                'file' => 'user/plugins/random/blueprints.yaml',
+                'modified' => 1441360626
+            ],
+            'plugins/relatedpages' => [
+                'file' => 'user/plugins/relatedpages/blueprints.yaml',
+                'modified' => 1442860064
             ]
         ],
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1439547779
+                'modified' => 1442859860
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1439547779
+                'modified' => 1442859860
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1439547779
+                'modified' => 1442859860
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1439547779
+                'modified' => 1442859860
             ]
         ]
     ],
     'data' => [
         'items' => [
+            'plugins' => [
+                'type' => '_parent',
+                'name' => 'plugins'
+            ],
+            'plugins.cachebuster' => [
+                'type' => '_parent',
+                'name' => 'plugins.cachebuster'
+            ],
             'plugins.cachebuster.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin status',
@@ -74,6 +90,10 @@ return [
                 'placeholder' => '/cachebuster',
                 'name' => 'plugins.cachebuster.route'
             ],
+            'plugins.error' => [
+                'type' => '_parent',
+                'name' => 'plugins.error'
+            ],
             'plugins.error.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin status',
@@ -87,6 +107,21 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.error.enabled'
+            ],
+            'plugins.error.routes' => [
+                'type' => '_parent',
+                'name' => 'plugins.error.routes'
+            ],
+            'plugins.error.routes.404' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => '404 Route',
+                'default' => '/error',
+                'name' => 'plugins.error.routes.404'
+            ],
+            'plugins.feed' => [
+                'type' => '_parent',
+                'name' => 'plugins.feed'
             ],
             'plugins.feed.enabled' => [
                 'type' => 'toggle',
@@ -102,15 +137,15 @@ return [
                 ],
                 'name' => 'plugins.feed.enabled'
             ],
-            'plugins.feed.count' => [
+            'plugins.feed.limit' => [
                 'type' => 'text',
                 'label' => 'Feed count',
                 'validate' => [
-                    'type' => 'int',
+                    'type' => 'number',
                     'min' => 10,
                     'max' => 1000
                 ],
-                'name' => 'plugins.feed.count'
+                'name' => 'plugins.feed.limit'
             ],
             'plugins.feed.description' => [
                 'type' => 'textarea',
@@ -120,9 +155,10 @@ return [
             'plugins.feed.lang' => [
                 'type' => 'text',
                 'label' => 'Feed language code',
-                'placeholder' => 'en-us',
+                'default' => 'en',
+                'placeholder' => 'en',
                 'validate' => [
-                    'pattern' => '[a-zA-Z]{2,3}-a-zA-Z]{2,3}'
+                    'pattern' => '[a-zA-Z]{2,3}(-[a-zA-Z]{2,3})?'
                 ],
                 'name' => 'plugins.feed.lang'
             ],
@@ -130,11 +166,15 @@ return [
                 'type' => 'text',
                 'label' => 'Feed Length',
                 'validate' => [
-                    'type' => 'int',
+                    'type' => 'number',
                     'min' => 10,
                     'max' => 10000
                 ],
                 'name' => 'plugins.feed.length'
+            ],
+            'plugins.highlight' => [
+                'type' => '_parent',
+                'name' => 'plugins.highlight'
             ],
             'plugins.highlight.enabled' => [
                 'type' => 'toggle',
@@ -208,6 +248,10 @@ return [
                 ],
                 'name' => 'plugins.highlight.theme'
             ],
+            'plugins.mediaembed' => [
+                'type' => '_parent',
+                'name' => 'plugins.mediaembed'
+            ],
             'plugins.mediaembed.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin Status',
@@ -249,6 +293,10 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.mediaembed.built_in_js'
+            ],
+            'plugins.mediaembed.media' => [
+                'type' => '_parent',
+                'name' => 'plugins.mediaembed.media'
             ],
             'plugins.mediaembed.media.width' => [
                 'type' => 'text',
@@ -310,6 +358,10 @@ return [
                 'default' => 'http://',
                 'placeholder' => 'http://',
                 'name' => 'plugins.mediaembed.media.protocol'
+            ],
+            'plugins.mediaembed.services' => [
+                'type' => '_parent',
+                'name' => 'plugins.mediaembed.services'
             ],
             'plugins.mediaembed.services.SoundCloud' => [
                 'type' => 'toggle',
@@ -441,6 +493,10 @@ return [
                 ],
                 'name' => 'plugins.mediaembed.services.Slides'
             ],
+            'plugins.pagination' => [
+                'type' => '_parent',
+                'name' => 'plugins.pagination'
+            ],
             'plugins.pagination.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin status',
@@ -454,6 +510,18 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.pagination.enabled'
+            ],
+            'plugins.pagination.delta' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Delta',
+                'default' => 0,
+                'help' => 'How many pages to show left and right of the current page',
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 0
+                ],
+                'name' => 'plugins.pagination.delta'
             ],
             'plugins.pagination.built_in_css' => [
                 'type' => 'toggle',
@@ -469,6 +537,10 @@ return [
                 ],
                 'name' => 'plugins.pagination.built_in_css'
             ],
+            'plugins.problems' => [
+                'type' => '_parent',
+                'name' => 'plugins.problems'
+            ],
             'plugins.problems.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin status',
@@ -483,26 +555,359 @@ return [
                 ],
                 'name' => 'plugins.problems.enabled'
             ],
+            'plugins.problems.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.problems.built_in_css'
+            ],
+            'plugins.random' => [
+                'type' => '_parent',
+                'name' => 'plugins.random'
+            ],
+            'plugins.random.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.random.enabled'
+            ],
+            'plugins.random.route' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Route',
+                'default' => '/random',
+                'help' => 'Default route of the random plugin',
+                'name' => 'plugins.random.route'
+            ],
+            'plugins.random.redirect' => [
+                'type' => 'toggle',
+                'label' => 'Redirect',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.random.redirect'
+            ],
+            'plugins.random.filters' => [
+                'type' => 'selectize',
+                'label' => 'Category filter',
+                'help' => 'Comma separated list of category names',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'plugins.random.filters'
+            ],
+            'plugins.random.filter_combinator' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Filter Combinator',
+                'default' => 'and',
+                'options' => [
+                    'and' => 'And - Boolean &&',
+                    'or' => 'Or - Boolean ||'
+                ],
+                'name' => 'plugins.random.filter_combinator'
+            ],
+            'plugins.relatedpages' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages'
+            ],
+            'plugins.relatedpages.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.enabled'
+            ],
+            'plugins.relatedpages.basics_title' => [
+                'type' => 'section',
+                'title' => 'PLUGIN_REL_PAGES.BASICS',
+                'underline' => true,
+                'name' => 'plugins.relatedpages.basics_title'
+            ],
+            'plugins.relatedpages.limit' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_REL_PAGES.LIMIT',
+                'help' => 'PLUGIN_REL_PAGES.LIMIT_HELP',
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 0,
+                    'max' => 65536
+                ],
+                'name' => 'plugins.relatedpages.limit'
+            ],
+            'plugins.relatedpages.show_score' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.SHOW_SCORE',
+                'help' => 'PLUGIN_REL_PAGES.SHOW_SCORE_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.show_score'
+            ],
+            'plugins.relatedpages.filter' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.filter'
+            ],
+            'plugins.relatedpages.filter.items' => [
+                'type' => 'text',
+                'yaml' => true,
+                'label' => 'PLUGIN_REL_PAGES.ITEMS',
+                'help' => 'PLUGIN_REL_PAGES.ITEMS_HELP',
+                'default' => '@page: /blog',
+                'name' => 'plugins.relatedpages.filter.items'
+            ],
+            'plugins.relatedpages.filter.order' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.filter.order'
+            ],
+            'plugins.relatedpages.filter.order.by' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_REL_PAGES.ORDER_BY',
+                'default' => 'date',
+                'options' => [
+                    'folder' => 'Folder',
+                    'title' => 'Title',
+                    'date' => 'Date',
+                    'default' => 'Default'
+                ],
+                'name' => 'plugins.relatedpages.filter.order.by'
+            ],
+            'plugins.relatedpages.filter.order.dir' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_REL_PAGES.ORDER',
+                'default' => 'desc',
+                'options' => [
+                    'asc' => 'Ascending',
+                    'desc' => 'Descending'
+                ],
+                'name' => 'plugins.relatedpages.filter.order.dir'
+            ],
+            'plugins.relatedpages.page_in_filter' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.PAGE_IN_FILTER',
+                'help' => 'PLUGIN_REL_PAGES.PAGE_IN_FILTER_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.page_in_filter'
+            ],
+            'plugins.relatedpages.explicit_pages' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.explicit_pages'
+            ],
+            'plugins.relatedpages.explicit_pages.process' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.EXPLICIT_PROCESS',
+                'help' => 'PLUGIN_REL_PAGES.EXPLICIT_PROCESS_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.explicit_pages.process'
+            ],
+            'plugins.relatedpages.explicit_pages.score' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_REL_PAGES.EXPLICIT_SCORE',
+                'help' => 'PLUGIN_REL_PAGES.EXPLICIT_SCORE_HELP',
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 0,
+                    'max' => 100
+                ],
+                'name' => 'plugins.relatedpages.explicit_pages.score'
+            ],
+            'plugins.relatedpages.taxonomy_title' => [
+                'type' => 'section',
+                'title' => 'PLUGIN_REL_PAGES.TAXONOMY_MATCH',
+                'underline' => true,
+                'name' => 'plugins.relatedpages.taxonomy_title'
+            ],
+            'plugins.relatedpages.taxonomy_match' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.taxonomy_match'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_REL_PAGES.TAXONOMY',
+                'help' => 'PLUGIN_REL_PAGES.TAXONOMY_HELP',
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.process' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.TAXONOMY_TAXONOMY_PROCESS',
+                'help' => 'PLUGIN_REL_PAGES.TAXONOMY_TAXONOMY_PROCESS_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.process'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_content' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_content'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_content.process' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.TAXONOMY_CONTENT_PROCESS',
+                'help' => 'PLUGIN_REL_PAGES.TAXONOMY_CONTENT_PROCESS_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.process'
+            ],
+            'plugins.relatedpages.content_title' => [
+                'type' => 'section',
+                'title' => 'PLUGIN_REL_PAGES.CONTENT_MATCH',
+                'underline' => true,
+                'name' => 'plugins.relatedpages.content_title'
+            ],
+            'plugins.relatedpages.content_match' => [
+                'type' => '_parent',
+                'name' => 'plugins.relatedpages.content_match'
+            ],
+            'plugins.relatedpages.content_match.process' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_REL_PAGES.CONTENT_PROCESS',
+                'help' => 'PLUGIN_REL_PAGES.CONTENT_PROCESS_HELP',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.relatedpages.content_match.process'
+            ],
+            'plugins.relatedpages.advanced_title' => [
+                'type' => 'section',
+                'title' => 'PLUGIN_REL_PAGES.ADVANCED',
+                'underline' => true,
+                'name' => 'plugins.relatedpages.advanced_title'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.score_scale' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_REL_PAGES.TAXONOMY_SCORE_SCALE',
+                'size' => 'large',
+                'default' => [
+                    0 => 50,
+                    1 => 75,
+                    2 => 100
+                ],
+                'value_only' => true,
+                'placeholder_value' => 50,
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.score_scale'
+            ],
+            'plugins.relatedpages.taxonomy_match.taxonomy_content.score_scale' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_REL_PAGES.CONTENT_SCORE_SCALE',
+                'size' => 'large',
+                'default' => [
+                    0 => 50,
+                    1 => 75,
+                    2 => 100
+                ],
+                'value_only' => true,
+                'placeholder_value' => 50,
+                'name' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.score_scale'
+            ],
+            'site' => [
+                'type' => '_parent',
+                'name' => 'site'
+            ],
             'site.title' => [
                 'type' => 'text',
-                'label' => 'Site Title',
+                'label' => 'PLUGIN_ADMIN.SITE_TITLE',
                 'size' => 'large',
-                'placeholder' => 'Site wide title',
-                'help' => 'Default title for your site, often used in themes',
+                'placeholder' => 'PLUGIN_ADMIN.SITE_TITLE_PLACEHOLDER',
+                'help' => 'PLUGIN_ADMIN.SITE_TITLE_HELP',
                 'name' => 'site.title'
+            ],
+            'site.author' => [
+                'type' => '_parent',
+                'name' => 'site.author'
             ],
             'site.author.name' => [
                 'type' => 'text',
                 'size' => 'large',
-                'label' => 'Default Author',
-                'help' => 'A default author name, often used in themes or page content',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_AUTHOR',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_AUTHOR_HELP',
                 'name' => 'site.author.name'
             ],
             'site.author.email' => [
                 'type' => 'text',
                 'size' => 'large',
-                'label' => 'Default Email',
-                'help' => 'A default email to reference in themes or pages',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_EMAIL',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_EMAIL_HELP',
                 'validate' => [
                     'type' => 'email'
                 ],
@@ -511,22 +916,26 @@ return [
             'site.taxonomies' => [
                 'type' => 'selectize',
                 'size' => 'large',
-                'label' => 'Taxonomy Types',
+                'label' => 'PLUGIN_ADMIN.TAXONOMY_TYPES',
                 'classes' => 'fancy',
-                'help' => 'Taxonomy types must be defined here if you wish to use them in pages',
+                'help' => 'PLUGIN_ADMIN.TAXONOMY_TYPES_HELP',
                 'validate' => [
                     'type' => 'commalist'
                 ],
                 'name' => 'site.taxonomies'
             ],
+            'site.summary' => [
+                'type' => '_parent',
+                'name' => 'site.summary'
+            ],
             'site.summary.enabled' => [
                 'type' => 'toggle',
-                'label' => 'Enabled',
+                'label' => 'PLUGIN_ADMIN.ENABLED',
                 'highlight' => 1,
-                'help' => 'Enable page summary (the summary returns the same as the page content)',
+                'help' => 'PLUGIN_ADMIN.ENABLED_HELP',
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -536,84 +945,106 @@ return [
             'site.summary.size' => [
                 'type' => 'text',
                 'size' => 'x-small',
-                'label' => 'Summary Size',
-                'help' => 'The amount of characters of a page to use as a content summary',
-                'validate' => NULL,
-                'min' => 0,
-                'max' => 65536,
+                'label' => 'PLUGIN_ADMIN.SUMMARY_SIZE',
+                'help' => 'PLUGIN_ADMIN.SUMMARY_SIZE_HELP',
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 0,
+                    'max' => 65536
+                ],
                 'name' => 'site.summary.size'
             ],
             'site.summary.format' => [
                 'type' => 'toggle',
-                'label' => 'Format',
+                'label' => 'PLUGIN_ADMIN.FORMAT',
                 'classes' => 'fancy',
-                'help' => 'short = use the first occurrence of delimiter or size; long = summary delimiter will be ignored',
+                'help' => 'PLUGIN_ADMIN.FORMAT_HELP',
                 'highlight' => 'short',
                 'options' => [
-                    'short' => 'Short',
-                    'long' => 'Long'
+                    'short' => 'PLUGIN_ADMIN.SHORT',
+                    'long' => 'PLUGIN_ADMIN.LONG'
                 ],
                 'name' => 'site.summary.format'
             ],
             'site.summary.delimiter' => [
                 'type' => 'text',
                 'size' => 'x-small',
-                'label' => 'Delimiter',
-                'help' => 'The summary delimiter (default \'===\')',
+                'label' => 'PLUGIN_ADMIN.DELIMITER',
+                'help' => 'PLUGIN_ADMIN.DELIMITER_HELP',
                 'name' => 'site.summary.delimiter'
             ],
             'site.metadata' => [
                 'type' => 'array',
-                'label' => 'Metadata',
-                'help' => 'Default metadata values that will be displayed on every page unless overridden by the page',
-                'placeholder_key' => 'Name',
-                'placeholder_value' => 'Content',
+                'label' => 'PLUGIN_ADMIN.METADATA',
+                'help' => 'PLUGIN_ADMIN.METADATA_HELP',
+                'placeholder_key' => 'PLUGIN_ADMIN.METADATA_KEY',
+                'placeholder_value' => 'PLUGIN_ADMIN.METADATA_VALUE',
                 'name' => 'site.metadata'
             ],
             'site.redirects' => [
                 'type' => 'array',
-                'label' => 'Custom Redirects',
-                'help' => 'routes to redirect to other pages. Standard Regex replacement is valid',
-                'placeholder_key' => '/your/alias',
-                'placeholder_value' => '/your/redirect',
+                'label' => 'PLUGIN_ADMIN.CUSTOM_REDIRECTS',
+                'help' => 'PLUGIN_ADMIN.CUSTOM_REDIRECTS_HELP',
+                'placeholder_key' => 'PLUGIN_ADMIN.CUSTOM_REDIRECTS_PLACEHOLDER_KEY',
+                'placeholder_value' => 'PLUGIN_ADMIN.CUSTOM_REDIRECTS_PLACEHOLDER_VALUE',
                 'name' => 'site.redirects'
             ],
             'site.routes' => [
                 'type' => 'array',
-                'label' => 'Custom Routes',
-                'help' => 'routes to alias to other pages. Standard Regex replacement is valid',
-                'placeholder_key' => '/your/alias',
-                'placeholder_value' => '/your/route',
+                'label' => 'PLUGIN_ADMIN.CUSTOM_ROUTES',
+                'help' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_HELP',
+                'placeholder_key' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_KEY',
+                'placeholder_value' => 'PLUGIN_ADMIN.CUSTOM_ROUTES_PLACEHOLDER_VALUE',
                 'name' => 'site.routes'
+            ],
+            'streams' => [
+                'type' => '_parent',
+                'name' => 'streams'
+            ],
+            'streams.schemes' => [
+                'type' => '_parent',
+                'name' => 'streams.schemes'
             ],
             'streams.schemes.xxx' => [
                 'type' => 'array',
                 'name' => 'streams.schemes.xxx'
             ],
+            'system' => [
+                'type' => '_parent',
+                'name' => 'system'
+            ],
+            'system.home' => [
+                'type' => '_parent',
+                'name' => 'system.home'
+            ],
             'system.home.alias' => [
                 'type' => 'pages',
                 'size' => 'medium',
                 'classes' => 'fancy',
-                'label' => 'Home page',
+                'label' => 'PLUGIN_ADMIN.HOME_PAGE',
                 'show_all' => false,
                 'show_modular' => false,
                 'show_root' => false,
-                'help' => 'The page that Grav will use as the default landing page',
+                'help' => 'PLUGIN_ADMIN.HOME_PAGE_HELP',
                 'name' => 'system.home.alias'
+            ],
+            'system.pages' => [
+                'type' => '_parent',
+                'name' => 'system.pages'
             ],
             'system.pages.theme' => [
                 'type' => 'themeselect',
                 'classes' => 'fancy',
                 'selectize' => true,
                 'size' => 'medium',
-                'label' => 'Default theme',
-                'help' => 'Set the default theme for Grav to use (default is Antimatter)',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_THEME',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_THEME_HELP',
                 'name' => 'system.pages.theme'
             ],
             'system.pages.process' => [
                 'type' => 'checkboxes',
-                'label' => 'Process',
-                'help' => 'Control how pages are processed. Can be set per-page rather than globally',
+                'label' => 'PLUGIN_ADMIN.PROCESS',
+                'help' => 'PLUGIN_ADMIN.PROCESS_HELP',
                 'default' => [
                     0 => [
                         'markdown' => true
@@ -631,10 +1062,10 @@ return [
             ],
             'system.timezone' => [
                 'type' => 'select',
-                'label' => 'Timezone',
+                'label' => 'PLUGIN_ADMIN.TIMEZONE',
                 'size' => 'medium',
                 'classes' => 'fancy',
-                'help' => 'Override the default timezone the server',
+                'help' => 'PLUGIN_ADMIN.TIMEZONE_HELP',
                 '@data-options' => '\\Grav\\Common\\Utils::timezones',
                 'default' => '',
                 'options' => [
@@ -774,168 +1205,168 @@ return [
                     'America/Santiago' => '(UTC-03:00) America/Santiago',
                     'America/Moncton' => '(UTC-03:00) America/Moncton',
                     'America/Paramaribo' => '(UTC-03:00) America/Paramaribo',
-                    'America/Argentina/Rio_Gallegos' => '(UTC-03:00) America/Argentina/Rio_Gallegos',
-                    'America/Argentina/Mendoza' => '(UTC-03:00) America/Argentina/Mendoza',
                     'America/Argentina/Salta' => '(UTC-03:00) America/Argentina/Salta',
                     'America/Argentina/San_Juan' => '(UTC-03:00) America/Argentina/San_Juan',
                     'America/Argentina/San_Luis' => '(UTC-03:00) America/Argentina/San_Luis',
-                    'America/Argentina/Jujuy' => '(UTC-03:00) America/Argentina/Jujuy',
-                    'America/Argentina/Cordoba' => '(UTC-03:00) America/Argentina/Cordoba',
-                    'America/Maceio' => '(UTC-03:00) America/Maceio',
-                    'America/Araguaina' => '(UTC-03:00) America/Araguaina',
-                    'America/Argentina/Buenos_Aires' => '(UTC-03:00) America/Argentina/Buenos_Aires',
-                    'America/Argentina/Catamarca' => '(UTC-03:00) America/Argentina/Catamarca',
                     'America/Argentina/Tucuman' => '(UTC-03:00) America/Argentina/Tucuman',
+                    'America/Argentina/Rio_Gallegos' => '(UTC-03:00) America/Argentina/Rio_Gallegos',
+                    'America/Argentina/Mendoza' => '(UTC-03:00) America/Argentina/Mendoza',
+                    'America/Argentina/Cordoba' => '(UTC-03:00) America/Argentina/Cordoba',
+                    'America/Argentina/Jujuy' => '(UTC-03:00) America/Argentina/Jujuy',
+                    'America/Argentina/Buenos_Aires' => '(UTC-03:00) America/Argentina/Buenos_Aires',
                     'America/Argentina/La_Rioja' => '(UTC-03:00) America/Argentina/La_Rioja',
-                    'America/Glace_Bay' => '(UTC-03:00) America/Glace_Bay',
                     'America/Argentina/Ushuaia' => '(UTC-03:00) America/Argentina/Ushuaia',
+                    'America/Araguaina' => '(UTC-03:00) America/Araguaina',
+                    'America/Glace_Bay' => '(UTC-03:00) America/Glace_Bay',
+                    'America/Goose_Bay' => '(UTC-03:00) America/Goose_Bay',
                     'America/Halifax' => '(UTC-03:00) America/Halifax',
                     'America/Fortaleza' => '(UTC-03:00) America/Fortaleza',
-                    'America/Goose_Bay' => '(UTC-03:00) America/Goose_Bay',
+                    'America/Maceio' => '(UTC-03:00) America/Maceio',
                     'America/Belem' => '(UTC-03:00) America/Belem',
+                    'America/Argentina/Catamarca' => '(UTC-03:00) America/Argentina/Catamarca',
                     'America/Cayenne' => '(UTC-03:00) America/Cayenne',
                     'America/Bahia' => '(UTC-03:00) America/Bahia',
                     'America/St_Johns' => '(UTC-02:30) America/St_Johns',
                     'Atlantic/South_Georgia' => '(UTC-02:00) Atlantic/South_Georgia',
+                    'America/Godthab' => '(UTC-02:00) America/Godthab',
                     'America/Miquelon' => '(UTC-02:00) America/Miquelon',
                     'America/Noronha' => '(UTC-02:00) America/Noronha',
-                    'America/Godthab' => '(UTC-02:00) America/Godthab',
                     'Atlantic/Cape_Verde' => '(UTC-01:00) Atlantic/Cape_Verde',
-                    'Africa/Bissau' => '(UTC+00:00) Africa/Bissau',
+                    'Atlantic/St_Helena' => '(UTC+00:00) Atlantic/St_Helena',
                     'America/Scoresbysund' => '(UTC+00:00) America/Scoresbysund',
-                    'Africa/Accra' => '(UTC+00:00) Africa/Accra',
                     'Atlantic/Azores' => '(UTC+00:00) Atlantic/Azores',
-                    'Africa/Conakry' => '(UTC+00:00) Africa/Conakry',
+                    'America/Danmarkshavn' => '(UTC+00:00) America/Danmarkshavn',
+                    'Africa/Lome' => '(UTC+00:00) Africa/Lome',
+                    'Africa/Abidjan' => '(UTC+00:00) Africa/Abidjan',
                     'UTC' => '(UTC+00:00) UTC',
                     'Africa/Dakar' => '(UTC+00:00) Africa/Dakar',
-                    'Atlantic/Reykjavik' => '(UTC+00:00) Atlantic/Reykjavik',
-                    'Africa/Abidjan' => '(UTC+00:00) Africa/Abidjan',
-                    'Africa/Lome' => '(UTC+00:00) Africa/Lome',
-                    'Atlantic/St_Helena' => '(UTC+00:00) Atlantic/St_Helena',
-                    'Africa/Bamako' => '(UTC+00:00) Africa/Bamako',
-                    'Africa/Monrovia' => '(UTC+00:00) Africa/Monrovia',
-                    'Africa/Freetown' => '(UTC+00:00) Africa/Freetown',
-                    'America/Danmarkshavn' => '(UTC+00:00) America/Danmarkshavn',
+                    'Africa/Conakry' => '(UTC+00:00) Africa/Conakry',
+                    'Africa/Bissau' => '(UTC+00:00) Africa/Bissau',
+                    'Africa/Accra' => '(UTC+00:00) Africa/Accra',
+                    'Africa/Banjul' => '(UTC+00:00) Africa/Banjul',
                     'Africa/Ouagadougou' => '(UTC+00:00) Africa/Ouagadougou',
                     'Africa/Sao_Tome' => '(UTC+00:00) Africa/Sao_Tome',
-                    'Africa/Banjul' => '(UTC+00:00) Africa/Banjul',
+                    'Africa/Freetown' => '(UTC+00:00) Africa/Freetown',
+                    'Africa/Bamako' => '(UTC+00:00) Africa/Bamako',
                     'Africa/Nouakchott' => '(UTC+00:00) Africa/Nouakchott',
+                    'Africa/Monrovia' => '(UTC+00:00) Africa/Monrovia',
+                    'Atlantic/Reykjavik' => '(UTC+00:00) Atlantic/Reykjavik',
                     'Europe/Jersey' => '(UTC+01:00) Europe/Jersey',
-                    'Europe/London' => '(UTC+01:00) Europe/London',
                     'Africa/El_Aaiun' => '(UTC+01:00) Africa/El_Aaiun',
+                    'Europe/London' => '(UTC+01:00) Europe/London',
+                    'Europe/Isle_of_Man' => '(UTC+01:00) Europe/Isle_of_Man',
                     'Africa/Douala' => '(UTC+01:00) Africa/Douala',
+                    'Europe/Lisbon' => '(UTC+01:00) Europe/Lisbon',
+                    'Africa/Brazzaville' => '(UTC+01:00) Africa/Brazzaville',
+                    'Africa/Bangui' => '(UTC+01:00) Africa/Bangui',
                     'Africa/Algiers' => '(UTC+01:00) Africa/Algiers',
                     'Africa/Casablanca' => '(UTC+01:00) Africa/Casablanca',
-                    'Africa/Brazzaville' => '(UTC+01:00) Africa/Brazzaville',
                     'Europe/Dublin' => '(UTC+01:00) Europe/Dublin',
-                    'Africa/Bangui' => '(UTC+01:00) Africa/Bangui',
-                    'Europe/Lisbon' => '(UTC+01:00) Europe/Lisbon',
-                    'Europe/Isle_of_Man' => '(UTC+01:00) Europe/Isle_of_Man',
                     'Africa/Libreville' => '(UTC+01:00) Africa/Libreville',
-                    'Africa/Niamey' => '(UTC+01:00) Africa/Niamey',
-                    'Africa/Lagos' => '(UTC+01:00) Africa/Lagos',
-                    'Africa/Malabo' => '(UTC+01:00) Africa/Malabo',
-                    'Africa/Ndjamena' => '(UTC+01:00) Africa/Ndjamena',
                     'Atlantic/Madeira' => '(UTC+01:00) Atlantic/Madeira',
-                    'Atlantic/Canary' => '(UTC+01:00) Atlantic/Canary',
+                    'Africa/Ndjamena' => '(UTC+01:00) Africa/Ndjamena',
+                    'Africa/Kinshasa' => '(UTC+01:00) Africa/Kinshasa',
                     'Atlantic/Faroe' => '(UTC+01:00) Atlantic/Faroe',
                     'Africa/Luanda' => '(UTC+01:00) Africa/Luanda',
-                    'Africa/Porto-Novo' => '(UTC+01:00) Africa/Porto-Novo',
-                    'Africa/Kinshasa' => '(UTC+01:00) Africa/Kinshasa',
+                    'Africa/Malabo' => '(UTC+01:00) Africa/Malabo',
+                    'Atlantic/Canary' => '(UTC+01:00) Atlantic/Canary',
+                    'Africa/Niamey' => '(UTC+01:00) Africa/Niamey',
+                    'Africa/Lagos' => '(UTC+01:00) Africa/Lagos',
                     'Europe/Guernsey' => '(UTC+01:00) Europe/Guernsey',
-                    'Africa/Windhoek' => '(UTC+01:00) Africa/Windhoek',
+                    'Africa/Porto-Novo' => '(UTC+01:00) Africa/Porto-Novo',
                     'Africa/Tunis' => '(UTC+01:00) Africa/Tunis',
+                    'Europe/Malta' => '(UTC+02:00) Europe/Malta',
                     'Europe/Belgrade' => '(UTC+02:00) Europe/Belgrade',
-                    'Europe/Vatican' => '(UTC+02:00) Europe/Vatican',
                     'Europe/Berlin' => '(UTC+02:00) Europe/Berlin',
-                    'Europe/Andorra' => '(UTC+02:00) Europe/Andorra',
+                    'Europe/Vienna' => '(UTC+02:00) Europe/Vienna',
                     'Europe/Warsaw' => '(UTC+02:00) Europe/Warsaw',
-                    'Europe/Zagreb' => '(UTC+02:00) Europe/Zagreb',
                     'Europe/Zurich' => '(UTC+02:00) Europe/Zurich',
                     'Europe/Amsterdam' => '(UTC+02:00) Europe/Amsterdam',
-                    'Europe/Vienna' => '(UTC+02:00) Europe/Vienna',
-                    'Europe/Kaliningrad' => '(UTC+02:00) Europe/Kaliningrad',
+                    'Europe/Zagreb' => '(UTC+02:00) Europe/Zagreb',
+                    'Europe/Andorra' => '(UTC+02:00) Europe/Andorra',
+                    'Europe/Vaduz' => '(UTC+02:00) Europe/Vaduz',
+                    'Europe/Oslo' => '(UTC+02:00) Europe/Oslo',
                     'Europe/Monaco' => '(UTC+02:00) Europe/Monaco',
                     'Europe/Madrid' => '(UTC+02:00) Europe/Madrid',
-                    'Europe/Malta' => '(UTC+02:00) Europe/Malta',
-                    'Europe/Oslo' => '(UTC+02:00) Europe/Oslo',
-                    'Europe/Luxembourg' => '(UTC+02:00) Europe/Luxembourg',
-                    'Europe/Podgorica' => '(UTC+02:00) Europe/Podgorica',
-                    'Europe/Paris' => '(UTC+02:00) Europe/Paris',
                     'Europe/Ljubljana' => '(UTC+02:00) Europe/Ljubljana',
-                    'Europe/Rome' => '(UTC+02:00) Europe/Rome',
-                    'Europe/Stockholm' => '(UTC+02:00) Europe/Stockholm',
-                    'Europe/Tirane' => '(UTC+02:00) Europe/Tirane',
+                    'Europe/Paris' => '(UTC+02:00) Europe/Paris',
                     'Europe/Prague' => '(UTC+02:00) Europe/Prague',
-                    'Europe/Bratislava' => '(UTC+02:00) Europe/Bratislava',
-                    'Europe/Skopje' => '(UTC+02:00) Europe/Skopje',
+                    'Europe/Podgorica' => '(UTC+02:00) Europe/Podgorica',
+                    'Europe/Rome' => '(UTC+02:00) Europe/Rome',
                     'Europe/San_Marino' => '(UTC+02:00) Europe/San_Marino',
+                    'Europe/Tirane' => '(UTC+02:00) Europe/Tirane',
+                    'Europe/Kaliningrad' => '(UTC+02:00) Europe/Kaliningrad',
+                    'Europe/Luxembourg' => '(UTC+02:00) Europe/Luxembourg',
+                    'Europe/Bratislava' => '(UTC+02:00) Europe/Bratislava',
+                    'Europe/Stockholm' => '(UTC+02:00) Europe/Stockholm',
                     'Europe/Sarajevo' => '(UTC+02:00) Europe/Sarajevo',
-                    'Europe/Vaduz' => '(UTC+02:00) Europe/Vaduz',
+                    'Europe/Skopje' => '(UTC+02:00) Europe/Skopje',
+                    'Europe/Vatican' => '(UTC+02:00) Europe/Vatican',
                     'Europe/Copenhagen' => '(UTC+02:00) Europe/Copenhagen',
-                    'Europe/Gibraltar' => '(UTC+02:00) Europe/Gibraltar',
-                    'Arctic/Longyearbyen' => '(UTC+02:00) Arctic/Longyearbyen',
-                    'Africa/Kigali' => '(UTC+02:00) Africa/Kigali',
-                    'Africa/Blantyre' => '(UTC+02:00) Africa/Blantyre',
                     'Europe/Busingen' => '(UTC+02:00) Europe/Busingen',
+                    'Antarctica/Troll' => '(UTC+02:00) Antarctica/Troll',
+                    'Europe/Gibraltar' => '(UTC+02:00) Europe/Gibraltar',
+                    'Africa/Kigali' => '(UTC+02:00) Africa/Kigali',
                     'Africa/Ceuta' => '(UTC+02:00) Africa/Ceuta',
+                    'Arctic/Longyearbyen' => '(UTC+02:00) Arctic/Longyearbyen',
+                    'Africa/Blantyre' => '(UTC+02:00) Africa/Blantyre',
                     'Africa/Gaborone' => '(UTC+02:00) Africa/Gaborone',
                     'Africa/Harare' => '(UTC+02:00) Africa/Harare',
                     'Africa/Johannesburg' => '(UTC+02:00) Africa/Johannesburg',
-                    'Europe/Budapest' => '(UTC+02:00) Europe/Budapest',
-                    'Africa/Lubumbashi' => '(UTC+02:00) Africa/Lubumbashi',
-                    'Africa/Bujumbura' => '(UTC+02:00) Africa/Bujumbura',
-                    'Africa/Mbabane' => '(UTC+02:00) Africa/Mbabane',
-                    'Antarctica/Troll' => '(UTC+02:00) Antarctica/Troll',
-                    'Europe/Brussels' => '(UTC+02:00) Europe/Brussels',
-                    'Africa/Maseru' => '(UTC+02:00) Africa/Maseru',
                     'Africa/Lusaka' => '(UTC+02:00) Africa/Lusaka',
+                    'Africa/Lubumbashi' => '(UTC+02:00) Africa/Lubumbashi',
+                    'Europe/Brussels' => '(UTC+02:00) Europe/Brussels',
                     'Africa/Tripoli' => '(UTC+02:00) Africa/Tripoli',
+                    'Africa/Windhoek' => '(UTC+02:00) Africa/Windhoek',
+                    'Africa/Mbabane' => '(UTC+02:00) Africa/Mbabane',
+                    'Africa/Bujumbura' => '(UTC+02:00) Africa/Bujumbura',
+                    'Europe/Budapest' => '(UTC+02:00) Europe/Budapest',
                     'Africa/Maputo' => '(UTC+02:00) Africa/Maputo',
-                    'Antarctica/Syowa' => '(UTC+03:00) Antarctica/Syowa',
-                    'Europe/Riga' => '(UTC+03:00) Europe/Riga',
+                    'Africa/Maseru' => '(UTC+02:00) Africa/Maseru',
                     'Africa/Cairo' => '(UTC+03:00) Africa/Cairo',
                     'Africa/Dar_es_Salaam' => '(UTC+03:00) Africa/Dar_es_Salaam',
-                    'Africa/Kampala' => '(UTC+03:00) Africa/Kampala',
+                    'Africa/Djibouti' => '(UTC+03:00) Africa/Djibouti',
+                    'Europe/Riga' => '(UTC+03:00) Europe/Riga',
+                    'Europe/Kiev' => '(UTC+03:00) Europe/Kiev',
                     'Africa/Khartoum' => '(UTC+03:00) Africa/Khartoum',
                     'Africa/Addis_Ababa' => '(UTC+03:00) Africa/Addis_Ababa',
                     'Africa/Mogadishu' => '(UTC+03:00) Africa/Mogadishu',
                     'Africa/Nairobi' => '(UTC+03:00) Africa/Nairobi',
                     'Europe/Mariehamn' => '(UTC+03:00) Europe/Mariehamn',
                     'Europe/Minsk' => '(UTC+03:00) Europe/Minsk',
-                    'Africa/Juba' => '(UTC+03:00) Africa/Juba',
+                    'Africa/Kampala' => '(UTC+03:00) Africa/Kampala',
                     'Europe/Moscow' => '(UTC+03:00) Europe/Moscow',
-                    'Europe/Kiev' => '(UTC+03:00) Europe/Kiev',
-                    'Africa/Djibouti' => '(UTC+03:00) Africa/Djibouti',
-                    'Europe/Sofia' => '(UTC+03:00) Europe/Sofia',
-                    'Indian/Antananarivo' => '(UTC+03:00) Indian/Antananarivo',
-                    'Europe/Helsinki' => '(UTC+03:00) Europe/Helsinki',
-                    'Europe/Istanbul' => '(UTC+03:00) Europe/Istanbul',
+                    'Europe/Simferopol' => '(UTC+03:00) Europe/Simferopol',
+                    'Africa/Juba' => '(UTC+03:00) Africa/Juba',
+                    'Asia/Qatar' => '(UTC+03:00) Asia/Qatar',
                     'Africa/Asmara' => '(UTC+03:00) Africa/Asmara',
-                    'Asia/Beirut' => '(UTC+03:00) Asia/Beirut',
+                    'Europe/Helsinki' => '(UTC+03:00) Europe/Helsinki',
+                    'Indian/Antananarivo' => '(UTC+03:00) Indian/Antananarivo',
+                    'Europe/Istanbul' => '(UTC+03:00) Europe/Istanbul',
                     'Europe/Zaporozhye' => '(UTC+03:00) Europe/Zaporozhye',
+                    'Asia/Beirut' => '(UTC+03:00) Asia/Beirut',
                     'Asia/Damascus' => '(UTC+03:00) Asia/Damascus',
-                    'Europe/Bucharest' => '(UTC+03:00) Europe/Bucharest',
+                    'Asia/Jerusalem' => '(UTC+03:00) Asia/Jerusalem',
                     'Asia/Gaza' => '(UTC+03:00) Asia/Gaza',
-                    'Asia/Hebron' => '(UTC+03:00) Asia/Hebron',
+                    'Indian/Mayotte' => '(UTC+03:00) Indian/Mayotte',
+                    'Europe/Bucharest' => '(UTC+03:00) Europe/Bucharest',
                     'Europe/Athens' => '(UTC+03:00) Europe/Athens',
                     'Indian/Comoro' => '(UTC+03:00) Indian/Comoro',
-                    'Asia/Jerusalem' => '(UTC+03:00) Asia/Jerusalem',
                     'Asia/Kuwait' => '(UTC+03:00) Asia/Kuwait',
-                    'Europe/Volgograd' => '(UTC+03:00) Europe/Volgograd',
+                    'Asia/Bahrain' => '(UTC+03:00) Asia/Bahrain',
                     'Europe/Tallinn' => '(UTC+03:00) Europe/Tallinn',
                     'Asia/Aden' => '(UTC+03:00) Asia/Aden',
-                    'Asia/Qatar' => '(UTC+03:00) Asia/Qatar',
-                    'Indian/Mayotte' => '(UTC+03:00) Indian/Mayotte',
-                    'Asia/Riyadh' => '(UTC+03:00) Asia/Riyadh',
-                    'Asia/Amman' => '(UTC+03:00) Asia/Amman',
+                    'Asia/Hebron' => '(UTC+03:00) Asia/Hebron',
+                    'Europe/Sofia' => '(UTC+03:00) Europe/Sofia',
+                    'Antarctica/Syowa' => '(UTC+03:00) Antarctica/Syowa',
                     'Europe/Uzhgorod' => '(UTC+03:00) Europe/Uzhgorod',
-                    'Asia/Bahrain' => '(UTC+03:00) Asia/Bahrain',
+                    'Asia/Amman' => '(UTC+03:00) Asia/Amman',
                     'Europe/Vilnius' => '(UTC+03:00) Europe/Vilnius',
+                    'Europe/Volgograd' => '(UTC+03:00) Europe/Volgograd',
                     'Asia/Baghdad' => '(UTC+03:00) Asia/Baghdad',
-                    'Asia/Nicosia' => '(UTC+03:00) Asia/Nicosia',
                     'Europe/Chisinau' => '(UTC+03:00) Europe/Chisinau',
-                    'Europe/Simferopol' => '(UTC+03:00) Europe/Simferopol',
+                    'Asia/Nicosia' => '(UTC+03:00) Asia/Nicosia',
+                    'Asia/Riyadh' => '(UTC+03:00) Asia/Riyadh',
                     'Indian/Reunion' => '(UTC+04:00) Indian/Reunion',
                     'Asia/Muscat' => '(UTC+04:00) Asia/Muscat',
                     'Indian/Mahe' => '(UTC+04:00) Indian/Mahe',
@@ -1059,16 +1490,43 @@ return [
                 ],
                 'name' => 'system.timezone'
             ],
+            'system.pages.dateformat' => [
+                'type' => '_parent',
+                'name' => 'system.pages.dateformat'
+            ],
+            'system.pages.dateformat.default' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'selectize' => [
+                    'create' => true
+                ],
+                'label' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT_HELP',
+                'placeholder' => 'PLUGIN_ADMIN.DEFAULT_DATE_FORMAT_PLACEHOLDER',
+                '@data-options' => '\\Grav\\Common\\Utils::dateFormats',
+                'options' => [
+                    '' => 'Auto Guess or Enter Custom',
+                    'd-m-Y H:i' => 'd-m-Y H:i (e.g. 21-09-2015 19:43)',
+                    'Y-m-d H:i' => 'Y-m-d H:i (e.g. 2015-09-21 19:43)',
+                    'm/d/Y h:i a' => 'm/d/Y h:i (e.g. 09/21/2015 07:43 pm)',
+                    'H:i d-m-Y' => 'H:i d-m-Y (e.g. 19:43 21-09-2015)',
+                    'h:i a m/d/Y' => 'h:i a m/d/Y (e.g. 07:43 pm 09/21/2015)'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'system.pages.dateformat.default'
+            ],
             'system.pages.dateformat.short' => [
                 'type' => 'dateformat',
                 'size' => 'medium',
                 'classes' => 'fancy',
-                'label' => 'Short date format',
-                'help' => 'Set the short date format that can be used by themes',
+                'label' => 'PLUGIN_ADMIN.SHORT_DATE_FORMAT',
+                'help' => 'PLUGIN_ADMIN.SHORT_DATE_FORMAT_HELP',
                 'default' => 'jS M Y',
                 'options' => [
                     'F jS \\a\\t g:ia' => 'Date1',
-                    'l jS of F g:i A' => 'Date2',
+                    'l jS \\of F g:i A' => 'Date2',
                     'D, m M Y G:i:s' => 'Date3',
                     'd-m-y G:i' => 'Date4',
                     'jS M Y' => 'Date5'
@@ -1079,48 +1537,56 @@ return [
                 'type' => 'dateformat',
                 'size' => 'medium',
                 'classes' => 'fancy',
-                'label' => 'Long date format',
-                'help' => 'Set the long date format that can be used by themes',
+                'label' => 'PLUGIN_ADMIN.LONG_DATE_FORMAT',
+                'help' => 'PLUGIN_ADMIN.LONG_DATE_FORMAT_HELP',
                 'options' => [
                     'F jS \\a\\t g:ia' => 'Date1',
-                    'l jS of F g:i A' => 'Date2',
+                    'l jS \\of F g:i A' => 'Date2',
                     'D, m M Y G:i:s' => 'Date3',
                     'd-m-y G:i' => 'Date4',
                     'jS M Y' => 'Date5'
                 ],
                 'name' => 'system.pages.dateformat.long'
             ],
+            'system.pages.order' => [
+                'type' => '_parent',
+                'name' => 'system.pages.order'
+            ],
             'system.pages.order.by' => [
                 'type' => 'select',
-                'size' => 'medium',
+                'size' => 'long',
                 'classes' => 'fancy',
-                'label' => 'Default ordering',
-                'help' => 'Pages in a list will render using this order unless it is overridden',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDERING',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_HELP',
                 'options' => [
-                    'default' => 'Default - based on folder name',
-                    'folder' => 'Folder - based on prefix-less folder name',
-                    'title' => 'Title - based on title field in header',
-                    'date' => 'Date - based on date field in header'
+                    'default' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT',
+                    'folder' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER',
+                    'title' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE',
+                    'date' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DATE'
                 ],
                 'name' => 'system.pages.order.by'
             ],
             'system.pages.order.dir' => [
                 'type' => 'toggle',
-                'label' => 'Default order direction',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION',
                 'highlight' => 'asc',
                 'default' => 'desc',
-                'help' => 'The direction of pages in a list',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION_HELP',
                 'options' => [
-                    'asc' => 'Ascending',
-                    'desc' => 'Descending'
+                    'asc' => 'PLUGIN_ADMIN.ASCENDING',
+                    'desc' => 'PLUGIN_ADMIN.DESCENDING'
                 ],
                 'name' => 'system.pages.order.dir'
+            ],
+            'system.pages.list' => [
+                'type' => '_parent',
+                'name' => 'system.pages.list'
             ],
             'system.pages.list.count' => [
                 'type' => 'text',
                 'size' => 'x-small',
-                'label' => 'Default page count',
-                'help' => 'Default maximum pages count in a list',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_PAGE_COUNT',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_PAGE_COUNT_HELP',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1
@@ -1129,8 +1595,8 @@ return [
             ],
             'system.pages.publish_dates' => [
                 'type' => 'toggle',
-                'label' => 'Date-based publishing',
-                'help' => 'Automatically (un)publish posts based on their date',
+                'label' => 'PLUGIN_ADMIN.DATE_BASED_PUBLISHING',
+                'help' => 'PLUGIN_ADMIN.DATE_BASED_PUBLISHING_HELP',
                 'highlight' => 1,
                 'options' => [
                     1 => 'Yes',
@@ -1143,8 +1609,8 @@ return [
             ],
             'system.pages.events' => [
                 'type' => 'checkboxes',
-                'label' => 'Events',
-                'help' => 'Enable or Disable specific events.  Disabling these can break plugins',
+                'label' => 'PLUGIN_ADMIN.EVENTS',
+                'help' => 'PLUGIN_ADMIN.EVENTS_HELP',
                 'default' => [
                     0 => [
                         'page' => true
@@ -1162,23 +1628,63 @@ return [
             ],
             'system.pages.redirect_default_route' => [
                 'type' => 'toggle',
-                'label' => 'Redirect default route',
-                'help' => 'Automatically redirect to a page\'s default route',
+                'label' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_ROUTE',
+                'help' => 'PLUGIN_ADMIN.REDIRECT_DEFAULT_ROUTE_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.pages.redirect_default_route'
             ],
+            'system.pages.redirect_trailing_slash' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.REDIRECT_TRAILING_SLASH',
+                'help' => 'PLUGIN_ADMIN.REDIRECT_TRAILING_SLASH_HELP',
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.pages.redirect_trailing_slash'
+            ],
+            'system.pages.ignore_files' => [
+                'type' => 'selectize',
+                'size' => 'large',
+                'label' => 'PLUGIN_ADMIN.IGNORE_FILES',
+                'help' => 'PLUGIN_ADMIN.IGNORE_FILES_HELP',
+                'classes' => 'fancy',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'system.pages.ignore_files'
+            ],
+            'system.pages.ignore_folders' => [
+                'type' => 'selectize',
+                'size' => 'large',
+                'label' => 'PLUGIN_ADMIN.IGNORE_FOLDERS',
+                'help' => 'PLUGIN_ADMIN.IGNORE_FOLDERS_HELP',
+                'classes' => 'fancy',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'system.pages.ignore_folders'
+            ],
+            'system.languages' => [
+                'type' => '_parent',
+                'name' => 'system.languages'
+            ],
             'system.languages.supported' => [
                 'type' => 'selectize',
                 'size' => 'large',
-                'label' => 'Supported',
-                'help' => 'Comma separated list of 2 letter language codes (for example \'en,fr,de\')',
+                'label' => 'PLUGIN_ADMIN.SUPPORTED',
+                'help' => 'PLUGIN_ADMIN.SUPPORTED_HELP',
                 'classes' => 'fancy',
                 'validate' => [
                     'type' => 'commalist'
@@ -1187,12 +1693,12 @@ return [
             ],
             'system.languages.translations' => [
                 'type' => 'toggle',
-                'label' => 'Translations enabled',
-                'help' => 'Support translations in Grav, plugins and extensions',
+                'label' => 'PLUGIN_ADMIN.TRANSLATIONS_ENABLED',
+                'help' => 'PLUGIN_ADMIN.TRANSLATIONS_ENABLED_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1201,12 +1707,12 @@ return [
             ],
             'system.languages.translations_fallback' => [
                 'type' => 'toggle',
-                'label' => 'Translations fallback',
-                'help' => 'Fallback through supported translations if active language doesn\'t exist',
+                'label' => 'PLUGIN_ADMIN.TRANSLATIONS_FALLBACK',
+                'help' => 'PLUGIN_ADMIN.TRANSLATIONS_FALLBACK_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1215,26 +1721,30 @@ return [
             ],
             'system.languages.session_store_active' => [
                 'type' => 'toggle',
-                'label' => 'Active language in session',
-                'help' => 'Store the active language in the session',
+                'label' => 'PLUGIN_ADMIN.ACTIVE_LANGUAGE_IN_SESSION',
+                'help' => 'PLUGIN_ADMIN.ACTIVE_LANGUAGE_IN_SESSION_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.languages.session_store_active'
             ],
+            'system.languages.home_redirect' => [
+                'type' => '_parent',
+                'name' => 'system.languages.home_redirect'
+            ],
             'system.languages.home_redirect.include_lang' => [
                 'type' => 'toggle',
-                'label' => 'Home redirect include language',
-                'help' => 'Include language in home redirect (/en)',
+                'label' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_LANGUAGE',
+                'help' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_LANGUAGE_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1243,23 +1753,51 @@ return [
             ],
             'system.languages.home_redirect.include_route' => [
                 'type' => 'toggle',
-                'label' => 'Home redirect include route',
-                'help' => 'Include route in home redirect (/blog)',
+                'label' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_ROUTE',
+                'help' => 'PLUGIN_ADMIN.HOME_REDIRECT_INCLUDE_ROUTE_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.languages.home_redirect.include_route'
             ],
+            'system.languages.http_accept_language' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.HTTP_ACCEPT_LANGUAGE',
+                'help' => 'PLUGIN_ADMIN.HTTP_ACCEPT_LANGUAGE_HELP',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.languages.http_accept_language'
+            ],
+            'system.languages.override_locale' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.OVERRIDE_LOCALE',
+                'help' => 'PLUGIN_ADMIN.OVERRIDE_LOCALE_HELP',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.languages.override_locale'
+            ],
             'system.pages.expires' => [
                 'type' => 'text',
                 'size' => 'small',
-                'label' => 'Expires',
-                'help' => 'Sets the expires header. The value is in seconds.',
+                'label' => 'PLUGIN_ADMIN.EXPIRES',
+                'help' => 'PLUGIN_ADMIN.EXPIRES_HELP',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1
@@ -1268,12 +1806,12 @@ return [
             ],
             'system.pages.last_modified' => [
                 'type' => 'toggle',
-                'label' => 'Last modified',
-                'help' => 'Sets the last modified header that can help optimize proxy and browser caching',
+                'label' => 'PLUGIN_ADMIN.LAST_MODIFIED',
+                'help' => 'PLUGIN_ADMIN.LAST_MODIFIED_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1282,12 +1820,12 @@ return [
             ],
             'system.pages.etag' => [
                 'type' => 'toggle',
-                'label' => 'ETag',
-                'help' => 'Sets the etag header to help identify when a page has been modified',
+                'label' => 'PLUGIN_ADMIN.ETAG',
+                'help' => 'PLUGIN_ADMIN.ETAG_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1296,26 +1834,30 @@ return [
             ],
             'system.pages.vary_accept_encoding' => [
                 'type' => 'toggle',
-                'label' => 'Vary accept encoding',
-                'help' => 'Sets the `Vary: Accept Encoding` header to help with proxy and CDN caching',
+                'label' => 'PLUGIN_ADMIN.VARY_ACCEPT_ENCODING',
+                'help' => 'PLUGIN_ADMIN.VARY_ACCEPT_ENCODING_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.pages.vary_accept_encoding'
             ],
+            'system.pages.markdown' => [
+                'type' => '_parent',
+                'name' => 'system.pages.markdown'
+            ],
             'system.pages.markdown.extra' => [
                 'type' => 'toggle',
                 'label' => 'Markdown extra',
-                'help' => 'Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/',
+                'help' => 'PLUGIN_ADMIN.MARKDOWN_EXTRA_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1324,12 +1866,12 @@ return [
             ],
             'system.pages.markdown.auto_line_breaks' => [
                 'type' => 'toggle',
-                'label' => 'Auto line breaks',
-                'help' => 'Enable support for automatic line breaks in markdown',
+                'label' => 'PLUGIN_ADMIN.AUTO_LINE_BREAKS',
+                'help' => 'PLUGIN_ADMIN.AUTO_LINE_BREAKS_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1338,12 +1880,12 @@ return [
             ],
             'system.pages.markdown.auto_url_links' => [
                 'type' => 'toggle',
-                'label' => 'Auto URL links',
-                'help' => 'Enable automatic conversion of URLs into HTML hyperlinks',
+                'label' => 'PLUGIN_ADMIN.AUTO_URL_LINKS',
+                'help' => 'PLUGIN_ADMIN.AUTO_URL_LINKS_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1352,38 +1894,46 @@ return [
             ],
             'system.pages.markdown.escape_markup' => [
                 'type' => 'toggle',
-                'label' => 'Escape markup',
-                'help' => 'Escape markup tags into HTML entities',
+                'label' => 'PLUGIN_ADMIN.ESCAPE_MARKUP',
+                'help' => 'PLUGIN_ADMIN.ESCAPE_MARKUP_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.pages.markdown.escape_markup'
             ],
+            'system.cache' => [
+                'type' => '_parent',
+                'name' => 'system.cache'
+            ],
             'system.cache.enabled' => [
                 'type' => 'toggle',
-                'label' => 'Caching',
-                'help' => 'Global ON/OFF switch to enable/disable Grav caching',
+                'label' => 'PLUGIN_ADMIN.CACHING',
+                'help' => 'PLUGIN_ADMIN.CACHING_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.cache.enabled'
             ],
+            'system.cache.check' => [
+                'type' => '_parent',
+                'name' => 'system.cache.check'
+            ],
             'system.cache.check.method' => [
                 'type' => 'select',
                 'size' => 'small',
                 'classes' => 'fancy',
-                'label' => 'Cache check method',
-                'help' => 'Select the method that Grav uses to check if page files have been modified.',
+                'label' => 'PLUGIN_ADMIN.CACHE_CHECK_METHOD',
+                'help' => 'PLUGIN_ADMIN.CACHE_CHECK_METHOD_HELP',
                 'options' => [
                     'file' => 'File',
                     'folder' => 'Folder',
@@ -1395,8 +1945,8 @@ return [
                 'type' => 'select',
                 'size' => 'small',
                 'classes' => 'fancy',
-                'label' => 'Cache driver',
-                'help' => 'Choose which cache driver Grav should use. \'Auto Detect\' attempts to find the best for you',
+                'label' => 'PLUGIN_ADMIN.CACHE_DRIVER',
+                'help' => 'PLUGIN_ADMIN.CACHE_DRIVER_HELP',
                 'options' => [
                     'auto' => 'Auto detect',
                     'file' => 'File',
@@ -1410,16 +1960,16 @@ return [
             'system.cache.prefix' => [
                 'type' => 'text',
                 'size' => 'x-small',
-                'label' => 'Cache prefix',
-                'help' => 'An identifier for part of the Grav key.  Don\'t change unless you know what your doing.',
-                'placeholder' => 'Derived from base URL (override by entering random string)',
+                'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
+                'help' => 'PLUGIN_ADMIN.CACHE_PREFIX_HELP',
+                'placeholder' => 'PLUGIN_ADMIN.CACHE_PREFIX_PLACEHOLDER',
                 'name' => 'system.cache.prefix'
             ],
             'system.cache.lifetime' => [
                 'type' => 'text',
                 'size' => 'small',
-                'label' => 'Lifetime',
-                'help' => 'Sets the cache lifetime in seconds. 0 = infinite',
+                'label' => 'PLUGIN_ADMIN.LIFETIME',
+                'help' => 'PLUGIN_ADMIN.LIFETIME_HELP',
                 'validate' => [
                     'type' => 'number'
                 ],
@@ -1427,26 +1977,30 @@ return [
             ],
             'system.cache.gzip' => [
                 'type' => 'toggle',
-                'label' => 'Gzip compression',
-                'help' => 'Enable GZip compression of the Grav page for increased performance.',
+                'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
+                'help' => 'PLUGIN_ADMIN.GZIP_COMPRESSION_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.cache.gzip'
             ],
+            'system.twig' => [
+                'type' => '_parent',
+                'name' => 'system.twig'
+            ],
             'system.twig.cache' => [
                 'type' => 'toggle',
-                'label' => 'Twig caching',
-                'help' => 'Control the Twig caching mechanism. Leave this enabled for best performance.',
+                'label' => 'PLUGIN_ADMIN.TWIG_CACHING',
+                'help' => 'PLUGIN_ADMIN.TWIG_CACHING_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1455,12 +2009,12 @@ return [
             ],
             'system.twig.debug' => [
                 'type' => 'toggle',
-                'label' => 'Twig debug',
-                'help' => 'Allows the option of not loading the Twig Debugger extension',
+                'label' => 'PLUGIN_ADMIN.TWIG_DEBUG',
+                'help' => 'PLUGIN_ADMIN.TWIG_DEBUG_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1469,12 +2023,12 @@ return [
             ],
             'system.twig.auto_reload' => [
                 'type' => 'toggle',
-                'label' => 'Detect changes',
-                'help' => 'Twig will automatically recompile the Twig cache if it detects any changes in Twig templates',
+                'label' => 'PLUGIN_ADMIN.DETECT_CHANGES',
+                'help' => 'PLUGIN_ADMIN.DETECT_CHANGES_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1483,26 +2037,30 @@ return [
             ],
             'system.twig.autoescape' => [
                 'type' => 'toggle',
-                'label' => 'Autoescape variables',
-                'help' => 'Autoescapes all variables.  This will break your site most likely',
+                'label' => 'PLUGIN_ADMIN.AUTOESCAPE_VARIABLES',
+                'help' => 'PLUGIN_ADMIN.AUTOESCAPE_VARIABLES_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.twig.autoescape'
             ],
+            'system.assets' => [
+                'type' => '_parent',
+                'name' => 'system.assets'
+            ],
             'system.assets.css_pipeline' => [
                 'type' => 'toggle',
-                'label' => 'CSS pipeline',
-                'help' => 'The CSS pipeline is the unification of multiple CSS resources into one file',
+                'label' => 'PLUGIN_ADMIN.CSS_PIPELINE',
+                'help' => 'PLUGIN_ADMIN.CSS_PIPELINE_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1511,12 +2069,12 @@ return [
             ],
             'system.assets.css_minify' => [
                 'type' => 'toggle',
-                'label' => 'CSS minify',
-                'help' => 'Minify the CSS during pipelining',
+                'label' => 'PLUGIN_ADMIN.CSS_MINIFY',
+                'help' => 'PLUGIN_ADMIN.CSS_MINIFY_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1525,12 +2083,12 @@ return [
             ],
             'system.assets.css_minify_windows' => [
                 'type' => 'toggle',
-                'label' => 'CSS minify Windows override',
-                'help' => 'Minify Override for Windows platforms. False by default due to ThreadStackSize',
+                'label' => 'PLUGIN_ADMIN.CSS_MINIFY_WINDOWS_OVERRIDE',
+                'help' => 'PLUGIN_ADMIN.CSS_MINIFY_WINDOWS_OVERRIDE_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1539,12 +2097,12 @@ return [
             ],
             'system.assets.css_rewrite' => [
                 'type' => 'toggle',
-                'label' => 'CSS rewrite',
-                'help' => 'Rewrite any CSS relative URLs during pipelining',
+                'label' => 'PLUGIN_ADMIN.CSS_REWRITE',
+                'help' => 'PLUGIN_ADMIN.CSS_REWRITE_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1553,12 +2111,12 @@ return [
             ],
             'system.assets.js_pipeline' => [
                 'type' => 'toggle',
-                'label' => 'JavaScript pipeline',
-                'help' => 'The JS pipeline is the unification of multiple JS resources into one file',
+                'label' => 'PLUGIN_ADMIN.JAVASCRIPT_PIPELINE',
+                'help' => 'PLUGIN_ADMIN.JAVASCRIPT_PIPELINE_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1567,12 +2125,12 @@ return [
             ],
             'system.assets.js_minify' => [
                 'type' => 'toggle',
-                'label' => 'JavaScript minify',
-                'help' => 'Minify the JS during pipelining',
+                'label' => 'PLUGIN_ADMIN.JAVASCRIPT_MINIFY',
+                'help' => 'PLUGIN_ADMIN.JAVASCRIPT_MINIFY_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1581,12 +2139,12 @@ return [
             ],
             'system.assets.enable_asset_timestamp' => [
                 'type' => 'toggle',
-                'label' => 'Enable timestamps on assets',
-                'help' => 'Enable asset timestamps',
+                'label' => 'PLUGIN_ADMIN.ENABLED_TIMESTAMPS_ON_ASSETS',
+                'help' => 'PLUGIN_ADMIN.ENABLED_TIMESTAMPS_ON_ASSETS_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1595,19 +2153,23 @@ return [
             ],
             'system.assets.collections' => [
                 'type' => 'array',
-                'label' => 'Collections',
+                'label' => 'PLUGIN_ADMIN.COLLECTIONS',
                 'placeholder_key' => 'collection_name',
                 'placeholder_value' => 'collection_path',
                 'name' => 'system.assets.collections'
             ],
+            'system.errors' => [
+                'type' => '_parent',
+                'name' => 'system.errors'
+            ],
             'system.errors.display' => [
                 'type' => 'toggle',
-                'label' => 'Display errors',
-                'help' => 'Display full backtrace-style error page',
+                'label' => 'PLUGIN_ADMIN.DISPLAY_ERRORS',
+                'help' => 'PLUGIN_ADMIN.DISPLAY_ERRORS_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1616,64 +2178,62 @@ return [
             ],
             'system.errors.log' => [
                 'type' => 'toggle',
-                'label' => 'Log errors',
-                'help' => 'Log errors to /logs folder',
+                'label' => 'PLUGIN_ADMIN.LOG_ERRORS',
+                'help' => 'PLUGIN_ADMIN.LOG_ERRORS_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.errors.log'
             ],
+            'system.debugger' => [
+                'type' => '_parent',
+                'name' => 'system.debugger'
+            ],
             'system.debugger.enabled' => [
                 'type' => 'toggle',
-                'label' => 'Debugger',
-                'help' => 'Enable Grav debugger and following settings',
+                'label' => 'PLUGIN_ADMIN.DEBUGGER',
+                'help' => 'PLUGIN_ADMIN.DEBUGGER_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.debugger.enabled'
             ],
-            'system.debugger.twig' => [
-                'type' => 'toggle',
-                'label' => 'Debug Twig',
-                'help' => 'Enable debugging of Twig templates',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'system.debugger.twig'
+            'system.debugger.shutdown' => [
+                'type' => '_parent',
+                'name' => 'system.debugger.shutdown'
             ],
             'system.debugger.shutdown.close_connection' => [
                 'type' => 'toggle',
-                'label' => 'Shutdown close connection',
-                'help' => 'Close the connection before calling onShutdown(). false for debugging',
+                'label' => 'PLUGIN_ADMIN.SHUTDOWN_CLOSE_CONNECTION',
+                'help' => 'PLUGIN_ADMIN.SHUTDOWN_CLOSE_CONNECTION_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.debugger.shutdown.close_connection'
             ],
+            'system.images' => [
+                'type' => '_parent',
+                'name' => 'system.images'
+            ],
             'system.images.default_image_quality' => [
                 'type' => 'text',
-                'label' => 'Default image quality',
-                'help' => 'Default image quality to use when resampling or caching images (85%)',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY',
+                'help' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY_HELP',
                 'classes' => 'x-small',
                 'validate' => [
                     'type' => 'number',
@@ -1684,12 +2244,12 @@ return [
             ],
             'system.images.cache_all' => [
                 'type' => 'toggle',
-                'label' => 'Cache all images',
-                'help' => 'Run all images through Grav\'s cache system even if they have no media manipulations',
+                'label' => 'PLUGIN_ADMIN.CACHE_ALL',
+                'help' => 'PLUGIN_ADMIN.CACHE_ALL_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1698,22 +2258,26 @@ return [
             ],
             'system.images.debug' => [
                 'type' => 'toggle',
-                'label' => 'Image debug watermark',
-                'help' => 'Show an overlay over images indicating the pixel depth of the image when working with retina for example',
+                'label' => 'PLUGIN_ADMIN.IMAGES_DEBUG',
+                'help' => 'PLUGIN_ADMIN.IMAGES_DEBUG_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.images.debug'
             ],
+            'system.media' => [
+                'type' => '_parent',
+                'name' => 'system.media'
+            ],
             'system.media.upload_limit' => [
                 'type' => 'text',
-                'label' => 'File upload limit',
-                'help' => 'Set maximum upload size in bytes (0 is unlimited)',
+                'label' => 'PLUGIN_ADMIN.UPLOAD_LIMIT',
+                'help' => 'PLUGIN_ADMIN.UPLOAD_LIMIT_HELP',
                 'classes' => 'small',
                 'validate' => [
                     'type' => 'number'
@@ -1722,26 +2286,30 @@ return [
             ],
             'system.media.enable_media_timestamp' => [
                 'type' => 'toggle',
-                'label' => 'Enable timestamps on media',
-                'help' => 'Appends a timestamp based on last modified date to each media item',
+                'label' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP',
+                'help' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP_HELP',
                 'highlight' => 0,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
                 ],
                 'name' => 'system.media.enable_media_timestamp'
             ],
+            'system.session' => [
+                'type' => '_parent',
+                'name' => 'system.session'
+            ],
             'system.session.enabled' => [
                 'type' => 'toggle',
-                'label' => 'Enabled',
-                'help' => 'Enable session support within Grav',
+                'label' => 'PLUGIN_ADMIN.ENABLED',
+                'help' => 'PLUGIN_ADMIN.SESSION_ENABLED_HELP',
                 'highlight' => 1,
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1751,8 +2319,8 @@ return [
             'system.session.timeout' => [
                 'type' => 'text',
                 'size' => 'small',
-                'label' => 'Timeout',
-                'help' => 'Sets the session timeout in seconds',
+                'label' => 'PLUGIN_ADMIN.TIMEOUT',
+                'help' => 'PLUGIN_ADMIN.TIMEOUT_HELP',
                 'validate' => [
                     'type' => 'number',
                     'min' => 1
@@ -1762,18 +2330,18 @@ return [
             'system.session.name' => [
                 'type' => 'text',
                 'size' => 'small',
-                'label' => 'Name',
-                'help' => 'An identifier used to form the name of the session cookie',
+                'label' => 'PLUGIN_ADMIN.NAME',
+                'help' => 'PLUGIN_ADMIN.SESSION_NAME_HELP',
                 'name' => 'system.session.name'
             ],
             'system.absolute_urls' => [
                 'type' => 'toggle',
-                'label' => 'Absolute URLs',
+                'label' => 'PLUGIN_ADMIN.ABSOLUTE_URLS',
                 'highlight' => 0,
-                'help' => 'Absolute or relative URLs for `base_url`',
+                'help' => 'PLUGIN_ADMIN.ABSOLUTE_URLS_HELP',
                 'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
                 ],
                 'validate' => [
                     'type' => 'bool'
@@ -1782,9 +2350,9 @@ return [
             ],
             'system.param_sep' => [
                 'type' => 'select',
-                'label' => 'Parameter separator',
+                'label' => 'PLUGIN_ADMIN.PARAMETER_SEPARATOR',
                 'classes' => 'fancy',
-                'help' => 'Separater for passed parameters that can be changed for Apache on Windows',
+                'help' => 'PLUGIN_ADMIN.PARAMETER_SEPARATOR_HELP',
                 'default' => '',
                 'options' => [
                     ':' => ': (default)',
@@ -1803,11 +2371,14 @@ return [
                     'route' => 'plugins.cachebuster.route'
                 ],
                 'error' => [
-                    'enabled' => 'plugins.error.enabled'
+                    'enabled' => 'plugins.error.enabled',
+                    'routes' => [
+                        404 => 'plugins.error.routes.404'
+                    ]
                 ],
                 'feed' => [
                     'enabled' => 'plugins.feed.enabled',
-                    'count' => 'plugins.feed.count',
+                    'limit' => 'plugins.feed.limit',
                     'description' => 'plugins.feed.description',
                     'lang' => 'plugins.feed.lang',
                     'length' => 'plugins.feed.length'
@@ -1842,10 +2413,54 @@ return [
                 ],
                 'pagination' => [
                     'enabled' => 'plugins.pagination.enabled',
+                    'delta' => 'plugins.pagination.delta',
                     'built_in_css' => 'plugins.pagination.built_in_css'
                 ],
                 'problems' => [
-                    'enabled' => 'plugins.problems.enabled'
+                    'enabled' => 'plugins.problems.enabled',
+                    'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'random' => [
+                    'enabled' => 'plugins.random.enabled',
+                    'route' => 'plugins.random.route',
+                    'redirect' => 'plugins.random.redirect',
+                    'filters' => 'plugins.random.filters',
+                    'filter_combinator' => 'plugins.random.filter_combinator'
+                ],
+                'relatedpages' => [
+                    'enabled' => 'plugins.relatedpages.enabled',
+                    'basics_title' => 'plugins.relatedpages.basics_title',
+                    'limit' => 'plugins.relatedpages.limit',
+                    'show_score' => 'plugins.relatedpages.show_score',
+                    'filter' => [
+                        'items' => 'plugins.relatedpages.filter.items',
+                        'order' => [
+                            'by' => 'plugins.relatedpages.filter.order.by',
+                            'dir' => 'plugins.relatedpages.filter.order.dir'
+                        ]
+                    ],
+                    'page_in_filter' => 'plugins.relatedpages.page_in_filter',
+                    'explicit_pages' => [
+                        'process' => 'plugins.relatedpages.explicit_pages.process',
+                        'score' => 'plugins.relatedpages.explicit_pages.score'
+                    ],
+                    'taxonomy_title' => 'plugins.relatedpages.taxonomy_title',
+                    'taxonomy_match' => [
+                        'taxonomy' => 'plugins.relatedpages.taxonomy_match.taxonomy',
+                        'taxonomy_taxonomy' => [
+                            'process' => 'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.process',
+                            'score_scale' => 'plugins.relatedpages.taxonomy_match.taxonomy_taxonomy.score_scale'
+                        ],
+                        'taxonomy_content' => [
+                            'process' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.process',
+                            'score_scale' => 'plugins.relatedpages.taxonomy_match.taxonomy_content.score_scale'
+                        ]
+                    ],
+                    'content_title' => 'plugins.relatedpages.content_title',
+                    'content_match' => [
+                        'process' => 'plugins.relatedpages.content_match.process'
+                    ],
+                    'advanced_title' => 'plugins.relatedpages.advanced_title'
                 ]
             ],
             'site' => [
@@ -1878,6 +2493,7 @@ return [
                     'theme' => 'system.pages.theme',
                     'process' => 'system.pages.process',
                     'dateformat' => [
+                        'default' => 'system.pages.dateformat.default',
                         'short' => 'system.pages.dateformat.short',
                         'long' => 'system.pages.dateformat.long'
                     ],
@@ -1891,6 +2507,9 @@ return [
                     'publish_dates' => 'system.pages.publish_dates',
                     'events' => 'system.pages.events',
                     'redirect_default_route' => 'system.pages.redirect_default_route',
+                    'redirect_trailing_slash' => 'system.pages.redirect_trailing_slash',
+                    'ignore_files' => 'system.pages.ignore_files',
+                    'ignore_folders' => 'system.pages.ignore_folders',
                     'expires' => 'system.pages.expires',
                     'last_modified' => 'system.pages.last_modified',
                     'etag' => 'system.pages.etag',
@@ -1911,7 +2530,9 @@ return [
                     'home_redirect' => [
                         'include_lang' => 'system.languages.home_redirect.include_lang',
                         'include_route' => 'system.languages.home_redirect.include_route'
-                    ]
+                    ],
+                    'http_accept_language' => 'system.languages.http_accept_language',
+                    'override_locale' => 'system.languages.override_locale'
                 ],
                 'cache' => [
                     'enabled' => 'system.cache.enabled',
@@ -1945,7 +2566,6 @@ return [
                 ],
                 'debugger' => [
                     'enabled' => 'system.debugger.enabled',
-                    'twig' => 'system.debugger.twig',
                     'shutdown' => [
                         'close_connection' => 'system.debugger.shutdown.close_connection'
                     ]

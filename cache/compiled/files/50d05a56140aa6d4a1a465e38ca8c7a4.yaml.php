@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1441203151,
+    'modified' => 1442860923,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -22,7 +22,9 @@ return [
                 'method' => 'file'
             ],
             'driver' => 'auto',
-            'prefix' => 'g'
+            'prefix' => 'g',
+            'lifetime' => 604800,
+            'gzip' => true
         ],
         'twig' => [
             'cache' => true,

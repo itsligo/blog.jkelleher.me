@@ -2,7 +2,7 @@
 title: MIX Essentials (24-6-09, Dublin Hilton)
 date: 2009/06/25 11:28:00
 taxonomy: 
- category: blog 
+ tag: [ux,industry]
 ---
 
 I’m attending MIX Essentials in Dublin. It highlights the best bits of MIX, Las Vegas held earlier this year.

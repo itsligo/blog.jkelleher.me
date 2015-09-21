@@ -2,7 +2,7 @@
 title: MVVM – Where to start
 date: 2010/02/28 16:44:00
 taxonomy: 
- category: blog 
+ tag: [web-dev,dev]
 ---
 
 Generally, the job of programming nowadays is to tame complexity, making it accessible to the next maintenance cycle. Now having gotten to grips with WPF/Silverlight and its novel syntactic sugar, it’s time to refocus on the more grown-up issue of scalability.

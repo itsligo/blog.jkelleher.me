@@ -16,6 +16,8 @@ cache:
     method: file
   driver: auto
   prefix: 'g'
+  lifetime: 604800                     # Lifetime of cached data in seconds (0 = infinite)
+  gzip: true                          # GZip compress the page output
 
 twig:
   cache: true

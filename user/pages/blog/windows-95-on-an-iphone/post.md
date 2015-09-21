@@ -7,3 +7,5 @@ taxonomy:
 
 Need I say more? Thought someone put a stake through the heart of that OS!
 
+![iPhone](win95.jpg)
+

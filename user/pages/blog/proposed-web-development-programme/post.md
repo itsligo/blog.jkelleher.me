@@ -2,7 +2,7 @@
 title: Proposed Web Development Programme
 date: 2010/03/21 19:41:00
 taxonomy: 
- category: blog 
+ tag: [education]
 ---
 
 [BSc. in Web Development 2010-](http://prezi.com/tazrg07mxuwo/)

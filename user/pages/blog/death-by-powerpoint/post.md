@@ -9,9 +9,6 @@ Powerpoint isn't evil. It's just that we forget that it's just a tool. And we us
 
 [Death by PowerPoint](http://www.slideshare.net/thecroaker/death-by-powerpoint?type=powerpoint)
 
- 
-
-![](http://lh6.ggpht.com/_-8eBgLSYyzA/Sj7T4QsSsCI/AAAAAAAAEb8/3aBvN4r6Yow/videob1e8b94907dd.jpg?imgmax=800)[</param></embed></object></div>";" alt="">](http://www.youtube.com/watch?v=DZ2vtQCESpk)
-
+<iframe width="960" height="720" src="https://www.youtube.com/embed/DZ2vtQCESpk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 [Sample slides by Garr Reynolds](http://www.slideshare.net/garr/sample-slides-by-garr-reynolds?type=powerpoint)
 

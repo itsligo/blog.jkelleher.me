@@ -1,17 +1,61 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => 'a14a86580a05998eaba3332ebd7f041c:c5304efeaa82b73f48a4fb1b7ad3b4f1',
+    'checksum' => 'a14a86580a05998eaba3332ebd7f041c:16ffb2ef7fe7a77e1006f8d110afc659',
     'files' => [
         'system/languages' => [
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1439547779
+                'modified' => 1442859860
             ]
         ]
     ],
     'data' => [
         'en' => [
+            'PLUGIN_REL_PAGES' => [
+                'PLUGIN_STATUS' => 'Plugin status',
+                'BASICS' => 'Basic Settings',
+                'LIMIT' => 'Limit',
+                'LIMIT_HELP' => 'The number of related pages to display',
+                'ORDER' => 'Order',
+                'ORDER_BY' => 'Ordery by',
+                'SHOW_SCORE' => 'Show score',
+                'SHOW_SCORE_HELP' => 'Toggle to determine if scores should be displayed in output',
+                'ITEMS' => 'Items',
+                'ITEMS_HELP' => 'Supports `@self`, `@page`, and `@taxonomy` based collections',
+                'PAGE_IN_FILTER' => 'Page \'in\' filter',
+                'PAGE_IN_FILTER_HELP' => 'Enabled if the current page must be in the filtered collection',
+                'EXPLICIT_PROCESS' => 'Process explicit pages',
+                'EXPLICIT_PROCESS_HELP' => 'Enable this explicit page matching',
+                'EXPLICIT_SCORE' => 'Explicit page score',
+                'EXPLICIT_SCORE_HELP' => 'A score ranging from (0 - 100) to give explicit pages a weight',
+                'TAXONOMY_MATCH' => 'Taxonomy Type Matching',
+                'TAXONOMY' => 'Taxonomy',
+                'TAXONOMY_HELP' => 'Which taxonomy type to use for page matching',
+                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomy-taxonomy',
+                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Enable taxonomy to taxonomy matching',
+                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomy-content',
+                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Enable taxonomy to Content matching',
+                'CONTENT_MATCH' => 'Content Type Matching',
+                'CONTENT_PROCESS' => 'Content-content',
+                'CONTENT_PROCESS_HELP' => 'Enable content to content matching (NOTE: Disable if you have lots of content)',
+                'ADVANCED' => 'Advanced',
+                'TAXONOMY_SCORE_SCALE' => 'Taxonomy-taxonomy score scale',
+                'CONTENT_SCORE_SCALE' => 'Taxonomy-content score scale'
+            ],
+            'FRONTMATTER_ERROR_PAGE' => '---
+title: %1$s
+---
+
+# Error: Invalid Frontmatter
+
+Path: `%2$s`
+
+**%3$s**
+
+```
+%4$s
+```',
             'INFLECTOR_PLURALS' => [
                 '/(quiz)$/i' => '\\1zes',
                 '/^(ox)$/i' => '\\1en',

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1441293594,
-    'checksum' => '2307885a30918fc9cdda1fc24264e3bc',
+    'timestamp' => 1442861002,
+    'checksum' => 'aebe653196435e01b83c7e94f68d53cc',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -310,13 +310,69 @@ return [
             ],
             'pagination' => [
                 'enabled' => true,
-                'path' => '/blog',
                 'built_in_css' => true,
-                'delta' => 0
+                'delta' => 0,
+                'path' => '/blog'
             ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'random' => [
+                'enabled' => true,
+                'route' => '/random',
+                'redirect' => true,
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'filter_combinator' => 'and'
+            ],
+            'relatedpages' => [
+                'enabled' => true,
+                'limit' => 5,
+                'show_score' => false,
+                'score_threshold' => 20,
+                'filter' => [
+                    'items' => [
+                        '@page' => '/blog'
+                    ],
+                    'order' => [
+                        'by' => 'date',
+                        'dir' => 'desc'
+                    ]
+                ],
+                'page_in_filter' => true,
+                'explicit_pages' => [
+                    'process' => true,
+                    'score' => 100
+                ],
+                'taxonomy_match' => [
+                    'taxonomy' => 'tag',
+                    'taxonomy_taxonomy' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => 50,
+                            2 => 75,
+                            3 => 100
+                        ]
+                    ],
+                    'taxonomy_content' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => 20,
+                            2 => 30,
+                            3 => 45,
+                            4 => 60,
+                            5 => 70,
+                            6 => 80,
+                            7 => 90,
+                            8 => 100
+                        ]
+                    ]
+                ],
+                'content_match' => [
+                    'process' => false
+                ]
             ]
         ],
         'media' => [
@@ -467,8 +523,9 @@ return [
                 'bio' => 'I\'m a developer and lecture at IT Sligo'
             ],
             'taxonomies' => [
-                0 => 'tag',
-                1 => 'featured'
+                0 => 'category',
+                1 => 'tag',
+                2 => 'featured'
             ],
             'metadata' => [
                 'description' => 'John Kelleher - Lecturer and Coder'
@@ -532,6 +589,7 @@ return [
         'system' => [
             'absolute_urls' => false,
             'timezone' => '',
+            'default_locale' => NULL,
             'param_sep' => ':',
             'languages' => [
                 'supported' => [
@@ -543,7 +601,9 @@ return [
                 'home_redirect' => [
                     'include_lang' => true,
                     'include_route' => false
-                ]
+                ],
+                'http_accept_language' => false,
+                'override_locale' => false
             ],
             'home' => [
                 'alias' => '/blog'
@@ -558,6 +618,7 @@ return [
                     'count' => 20
                 ],
                 'dateformat' => [
+                    'default' => NULL,
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -593,6 +654,14 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
+                'redirect_trailing_slash' => true,
+                'ignore_files' => [
+                    0 => '.DS_Store'
+                ],
+                'ignore_folders' => [
+                    0 => '.git',
+                    1 => '.idea'
+                ],
                 'markdown_extra' => true
             ],
             'cache' => [
@@ -603,7 +672,7 @@ return [
                 'driver' => 'auto',
                 'prefix' => 'g',
                 'lifetime' => 604800,
-                'gzip' => false
+                'gzip' => true
             ],
             'twig' => [
                 'cache' => true,
@@ -631,10 +700,10 @@ return [
             ],
             'debugger' => [
                 'enabled' => false,
-                'twig' => true,
                 'shutdown' => [
                     'close_connection' => true
-                ]
+                ],
+                'twig' => true
             ],
             'images' => [
                 'default_image_quality' => 85,

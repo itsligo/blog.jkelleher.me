@@ -2,10 +2,10 @@
 title: The Elephant in the Room
 date: 2010/03/17 00:11:00
 taxonomy: 
- category: blog 
+ tag: industry
 ---
 
-## Nishant Kothary![Profile of Nishant Kothary](http://visitmix.com/images/profiles/illustrations/large/nishkoth.png)
+## Nishant Kothary![Profile of Nishant Kothary](nishkoth.png)
 
 ## Sr. Evangelist, MIX Online @rainypixels
 
@@ -35,12 +35,6 @@ Confirmation Bias – tendency for people to prefer information that conforms th
 * Be open-minded to trying new things
 * Be humble – you’re mortal
 
-##  
-
-## Divide and conquer
-
-Source: Future of Wireframes
-
 ## Recap:
 
 * Meeting is not communicating
@@ -50,7 +44,7 @@ Source: Future of Wireframes
 * Don’t be dogmatic about process or methods
 * We must accept our predictably irrational natures.
 
-![image](http://lh3.ggpht.com/_-8eBgLSYyzA/S6GASj_XXiI/AAAAAAABEW8/viK7Jf0ayk0/image%5B5%5D.png?imgmax=800)
+![Mix](mix.png)
 
 Underwriting his opines, Nishant refers to a blog post ‘[Web Design from the Gut](http://visitmix.com/Articles/Web-Design-from-the-Gut)’, detailing the process involved in the major redesign of the MIX Online_ site. Somewhat conventional, some parts unconventional, it makes interesting reading and further confirms (okay, I know he would say this as a designer) that wireframing is a key weapon in the design/development arsenal.
 

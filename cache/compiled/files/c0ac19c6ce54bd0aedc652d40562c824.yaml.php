@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/error/blueprints.yaml',
-    'modified' => 1437742390,
+    'modified' => 1441294781,
     'data' => [
         'name' => 'Error',
-        'version' => '1.2.2',
+        'version' => '1.3.0',
         'description' => 'Displays the error page.',
         'icon' => 'warning',
         'author' => [
@@ -32,6 +32,12 @@ return [
                     'validate' => [
                         'type' => 'bool'
                     ]
+                ],
+                'routes.404' => [
+                    'type' => 'text',
+                    'size' => 'medium',
+                    'label' => '404 Route',
+                    'default' => '/error'
                 ]
             ]
         ]
