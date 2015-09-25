@@ -1,5 +1,6 @@
 <?php
 namespace Grav;
+// ini_set('memory_limit', '1024M');
 
 if (version_compare($ver = PHP_VERSION, $req = '5.4.0', '<')) {
     throw new \RuntimeException(sprintf('You are running PHP %s, but Grav needs at least <strong>PHP %s</strong> to run.', $ver, $req));

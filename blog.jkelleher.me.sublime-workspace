@@ -319,46 +319,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "user/themes/jktheme/templates/partials/base.html.twig",
-			"settings":
-			{
-				"buffer_size": 3411,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "user/pages/blog/localhost-options/post.md",
-			"settings":
-			{
-				"buffer_size": 2654,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "user/pages/blog/2015-09-14-kernel_task-issues/post.md",
-			"settings":
-			{
-				"buffer_size": 2397,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "user/pages/blog/2015-08-13-web-dev-workflow/post.md",
-			"settings":
-			{
-				"buffer_size": 15126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "user/themes/jktheme/templates/post.html.twig",
-			"settings":
-			{
-				"buffer_size": 4516,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -490,60 +450,21 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/pages",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-14-kernel_task-issues",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/aiding-early-app-interface-design",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/and-were-back",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/ba-da-bing-ba-da-bing",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/browser-share-perspective",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/camouflage-art",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/casual-gaming-silverlight",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/clearrx-prescription-bottle-redesign",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/composing-posting-videos",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/computing-projects-showcase",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/death-by-powerpoint",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/designing-and-developing-for-the-mobile-web",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dnn-authentication",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/dotnetnuke",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/future-interface-design",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/getting-parallels-7-to-play-nice-with-windows-8",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/home-movies",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/interviews-with-irish-web-designers",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/isbusyindicator-bug",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/learning-in-2020",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/locus-crm-delivered",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/made-to-stick",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/marketeers-vs-engineers",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix-essentials-24-6-09-dublin-hilton",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-joe-belfiore-windows-phone-7-series",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-keynote-day-2",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mvvm-where-to-start",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/pagedcollectionview-with-entity-framework",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/proposed-web-development-programme",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/samsung-hd-camera-trick",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/source-control",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/tape-measure-funny",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/taxonomy-ie",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-elephant-in-the-room",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-last-harvest",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-truth-about-the-dinosaurs",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/where-good-engineering-goes-bad",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/windows-95-on-an-iphone",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/worldwide-broadband-costspeedpenetration",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-21-itsligo-site",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/vendor",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/vendor/bourbon",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates"
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates"
 	],
 	"file_history":
 	[
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-21-itsligo-site/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
+		"/Users/john/Sites/blog.jkelleher.me/index.php",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/base.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-14-kernel_task-issues/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow/post.md",
 		"/Users/john/Sites/pw_blog/site/config.php",
 		"/Users/john/Sites/pw_blog/wire/index.config.php",
 		"/Users/john/Sites/pw_blog/wire/config.php",
@@ -556,7 +477,6 @@
 		"/Users/john/Documents/dev/class/projectx/index.html",
 		"/Users/john/Documents/dev/class/projectx/README.md",
 		"/Users/john/Documents/dev/class/projectx/Gemfile",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/system/config/system.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/system.yaml",
 		"/Users/john/Downloads/localhost.png",
@@ -593,7 +513,6 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-report/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/mix10-joe-belfiore-windows-phone-7-series/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-truth-about-the-dinosaurs/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-robots-are-coming/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/toyota-hybrid-ad/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/browser-share-perspective/post.md",
@@ -620,11 +539,9 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/death-by-powerpoint/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/learning-in-2020/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/composing-posting-videos/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/site.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/default.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/random.yaml",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/base.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-elephant-in-the-room/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/samsung-hd-camera-trick/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/postmeta.html.twig",
@@ -642,7 +559,6 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/plugins/mediaembed/.gitignore",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/javascripts.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/javascripts.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/post.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/article.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/postmeta.html.twig",
@@ -668,10 +584,7 @@
 		"/Users/john/Sites/class.jkelleher.me/content/05-rad302/module.txt",
 		"/Users/john/Documents/dev/meanstack/app.js",
 		"/Users/john/Documents/dev/meanjs-with-token-auth/gruntfile.js",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca2/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca3/modweek.txt",
-		"/Users/john/Sites/class.jkelleher.me/clsss.sublime-project",
-		"/Users/john/Sites/class.jkelleher.me/content/08-prj300/01-begin/modproject.txt"
+		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca2/modweek.txt"
 	],
 	"find":
 	{
@@ -695,6 +608,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"full-pag",
+			"full",
+			"gtmet",
+			"desktop",
 			";\n",
 			"image",
 			".image",
@@ -818,11 +735,7 @@
 			"spsDataToken.baseUrl()",
 			"populatePrefBtn",
 			"option in orderedItems ",
-			"s.",
-			"auth",
-			"home",
-			"basectrl",
-			"auth"
+			"s."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -968,488 +881,14 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "user/themes/jktheme/templates/partials/base.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2533,
-								2533
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "user/pages/blog/localhost-options/post.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								94,
-								94
-							],
-							[
-								493,
-								493
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "user/pages/blog/2015-09-14-kernel_task-issues/post.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2397,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								132,
-								132
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "user/pages/blog/2015-08-13-web-dev-workflow/post.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								990,
-								990
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"file": "user/pages/blog/2015-09-14-kernel_task-issues/yeoman-logo.png",
-					"semi_transient": true,
-					"stack_index": 5,
-					"type": "image"
-				},
-				{
-					"buffer": 4,
-					"file": "user/themes/jktheme/templates/post.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								974,
-								974
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1502,7 +941,7 @@
 	"project": "blog.jkelleher.me.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1511,6 +950,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				".htac",
+				".htaccess"
+			],
+			[
+				"post.html",
+				"user/themes/jktheme/templates/post.html.twig"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
 			[
 				"web-dev",
 				"user/pages/blog/2015-08-13-web-dev-workflow/post.md"
@@ -1522,10 +973,6 @@
 			[
 				"localhost",
 				"user/pages/blog/localhost-options/post.md"
-			],
-			[
-				"post.html",
-				"user/themes/jktheme/templates/post.html.twig"
 			],
 			[
 				"system",
@@ -2014,14 +1461,6 @@
 			[
 				"data_placements",
 				"app/scripts/services/data_placements.js"
-			],
-			[
-				"placements.js",
-				"app/scripts/controllers/placement/placements.js"
-			],
-			[
-				"plcdeta",
-				"app/views/partials/placement_type/placement_type_details.html"
 			]
 		],
 		"width": 0.0
@@ -2055,8 +1494,8 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 253.0,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
