@@ -1,8 +1,8 @@
 ---
 title: About me
 ---
-
-I lecture in computing at IT Sligo, NW Ireland. My main areas of interest are:
+Head of Department of Computing & Creative Practices (CCP) at IT Sligo, NW Ireland. 
+My main areas of interest are:
 
 * front-end development
 * user experience

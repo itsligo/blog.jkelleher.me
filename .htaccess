@@ -87,3 +87,8 @@ Options -Indexes
   ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
+
+# keep alive headers
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>

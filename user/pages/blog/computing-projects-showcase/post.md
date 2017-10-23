@@ -2,7 +2,7 @@
 title: Computing Projects Showcase
 date: 2015/04/23 19:23:25
 taxonomy:
- tag: [website, cms, featured]
+ tag: [website, cms]
 image: projects.jpg
 ---
 

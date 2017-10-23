@@ -1,0 +1,89 @@
+'Data for Sankey
+' Type a list of Flows, like this:
+'     SOURCE [AMOUNT] TARGET
+' Examples:
+
+Intake 2012 [39] Soft Yr 1 #F50
+Intake 2012 [54] Games Yr 1 #090
+Intake 2012 [30] Web Yr 1 #0066ff
+Intake 2012 [31] Sys Yr 1 #993366
+
+' Yr 1 -> Yr 2 Soft
+Soft Yr 1 [31] Soft Yr 2 #F50
+Games Yr 1 [3] Soft Yr 2 #090
+Web Yr 1 [5] Soft Yr 2 #0066ff
+'Sys Yr 1 [2] Soft Yr 2 #993366
+Soft Yr 1 [1] Left Computing Yr 1 #F50
+Soft Yr 1 [8] Left ITS Yr 1 #F50
+
+' Yr 1 -> Yr 2 Games
+Games Yr 1 [1] Left Computing Yr 1 #090
+Games Yr 1 [26] Left ITS Yr 1 #090
+Games Yr 1 [17] Games Yr 2 #090
+
+' Yr 1 -> Yr 2 Web
+Web Yr 1 [14] Left ITS Yr 1 #0066ff
+Web Yr 1 [13] Web Yr 2 #0066ff
+Games Yr 1 [4] Web Yr 2 #090
+
+' Yr 1 -> Yr 2 Sys
+Sys Yr 1 [34] Sys Yr 2 #993366
+Sys Yr 1 [7] Left ITS Yr 1 #993366
+Sys Yr 1 [2] Left Computing Yr 1 #993366
+Soft Yr 1 [9] Sys Yr 2 #F50
+Games Yr 1 [3] Sys Yr 2 #090
+Web Yr 1 [2] Sys Yr 2 #0066ff
+
+' Yr 2 -> Yr 3 Soft
+Soft Yr 2 [24] Soft Yr 3 #F50
+Soft Yr 2 [1] Left Computing Yr 2 #F50
+Soft Yr 2 [6] Left ITS Yr 2 #F50
+
+' Yr 2 -> Yr 3 Games
+Games Yr 2 [7] Games Yr 3 #090
+Games Yr 2 [4] Left Computing Yr 2 #090
+Games Yr 2 [6] Left ITS Yr 2 #090
+
+' Yr 2 -> Yr 3 Web
+Web Yr 2 [6] Web Yr 3 #0066ff
+Web Yr 2 [1] Left Computing Yr 2 #0066ff
+Web Yr 2 [6] Left ITS Yr 2 #0066ff
+
+' Yr 2 -> Yr 3 Sys
+Sys Yr 2 [20] Sys Yr 3 #993366
+Sys Yr 2 [7] Left Computing Yr 2 #993366
+Sys Yr 2 [7] Left ITS Yr 2 #993366
+
+'Yr 3 -> Graduate
+
+' Yr 3 -> Grad Soft
+Soft Yr 3 [8] DT Soft Yr 3 #F50
+Soft Yr 3 [7] MT1 Soft Yr 3 #F50
+Soft Yr 3 [7] MT2 Soft Yr 3 #F50
+Soft Yr 3 [1] PS Soft Yr 3 #F50
+
+' Yr 3 -> Grad Games
+Games Yr 3 [1] DT Games Yr 3 #090
+Games Yr 3 [2] MT1 Games Yr 3 #090
+Games Yr 3 [1] MT2 Games Yr 3 #090
+Games Yr 3 [3] PS Games Yr 3 #090
+Games Yr 3 [4] FL Games Yr 3 #090
+
+' Yr 3 -> Grad Web
+Web Yr 3 [2] MT2 Web Yr 3 #0066ff
+Web Yr 3 [1] PS Web Yr 3 #0066ff
+Web Yr 3 [3] FL Web Yr 3 #0066ff
+
+' Yr 3 -> Grad Sys
+Sys Yr 3 [3] DT Sys Yr 3 #993366
+Sys Yr 3 [3] MT1 Sys Yr 3 #993366
+Sys Yr 3 [7] MT2 Sys Yr 3 #993366
+Sys Yr 3 [6] PS Sys Yr 3 #993366
+Sys Yr 3 [1] FL Sys Yr 3 #993366
+
+' After all your Flows are entered, use
+' the controls below to customize the
+' diagram's appearance.
+
+' For even finer control over presentation,
+' see the Manual (linked above).

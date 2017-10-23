@@ -19,5 +19,5 @@ feed:
 
 pagination: true
 
-cover: shore.jpg
+cover: shore_1155.jpg
 ---

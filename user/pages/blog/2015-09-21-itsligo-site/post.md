@@ -35,19 +35,19 @@ The design of Higher Education Sites (HEI) is problematic. They have a varied au
 ####Wordpress
 I should put out an initial rider here - I'm not a Wordpress (WP) fan. I do love the fact that anyone can get a full-featured site (well, blog) up and running in about 1 minute - that's not unique (there are others) but it's still commendable. It's also relatively easy to use and that has earned WP its accolades. However, the honeymoon wears off quickly.
 
-From my experience, it's slow and has a big bulls-eye target on it for hackers. No matter how much I curated WP sites, I was being hacked almost on a monthly basis. And yes I was patching to latest versions as soon as they dropped and I carefully selected themes (a common backdoor for hacking) but nonetheless I was being hit. Never had that level of 'attention' with Drupal, Joomla or Dotnetnuke. And naturally, nothing like that with flat-file CMSs or static-gen sites. But it's the peformance that concerned me most - and that doesn't seem to have changed. Now, before we start I agree there are improvements that can be made to ameliorate performance woes but I see too many sites that just don't bother making the effort needed. So let's see how we (at IT Sligo) have faired...
+From my experience, it's slow and has a big bulls-eye target on it for hackers. No matter how much I curated WP sites, I was being hacked almost on a monthly basis. And yes I was patching to latest versions as soon as they dropped and I carefully selected themes (a common backdoor for hacking) but nonetheless I was being hit. Never had that level of 'attention' with Drupal, Joomla or Dotnetnuke. And naturally, nothing like that with flat-file CMSs or static-gen sites. But it's the performance that concerned me most - and that doesn't seem to have changed. Now, before we start I agree there are improvements that can be made to ameliorate performance woes but I see too many sites that just don't bother making the effort needed. So let's see how we (at IT Sligo) have faired...
 
-{{page.media['full-page-capture.png'].cropResize(600,1000)}}
+{{page.media['full-page-capture.png'].cropResize(600,1000).html('www.itsligo.ie','www.itsligo.ie','img-center border-light')}}
 
 Running [www.itsligo.ie](http://www.itsligo.ie) through an array of web page metrics here's a smattering of results:
 
-![google mobile](google-mobile-friendly.png)
+![google mobile](google-mobile-friendly.png) {.border-light}
 Some good news - the site gets Google's approval as being mobile compatible which improves SEO on google searches.
 
-![google pagespeed-mobile](google-pagespeed-mobile.png)
-Not so good. [Google](http://googlewebmastercentral.blogspot.ie/2015/04/rolling-out-mobile-friendly-update.html) is prioritising its search results for responsive, fast sites - that's sites that look good and peform well on mobile.
+![google pagespeed-mobile](google-pagespeed-mobile.png) {.border-light}
+Not so good. [Google](http://googlewebmastercentral.blogspot.ie/2015/04/rolling-out-mobile-friendly-update.html) is prioritising its search results for responsive, fast sites - that's sites that look good and perform well on mobile.
 
-![google-pagespeed-desktop](google-pagespeed-desktop.png)
+![google-pagespeed-desktop](google-pagespeed-desktop.png) {.border-light}
 A score of 59% is better but far below a typical 80% baseline I'd regard as a reasonable speed for desktop.
 
 [![dynatrace.com site response](dynatrace-perf.png)](http://www.dynatrace.com/en_us/application-performance-management/products/performance-center.html)
@@ -148,12 +148,12 @@ I think there is room for some rationalisation of the primary navigation menus (
 ###No shortage of navigation
 It seems you can't get enough of a good thing. Many of the sub-pages are content poor and link heavy. Take the [Study...Applying...How to apply](http://itsligo.ie/study-at-it-sligo/applying/how-to-apply-2/) link. 
 
-![Study...Applying...How to apply](study-link.png)
+![Study...Applying...How to apply](study-link.jpg) {.border-light}
 
 That's a lot of navigation!
 Once we stray from the main home page, we loose a lot of the structure and many pages have little more than unorganised links to further pages. The student hub page is a good example:
 
-![Student Hub Page](student-hub.png)
+![Student Hub Page](student-hub.jpg) {.border-light}
 
 ![Confusing navigation](confusing-navigation.mp4)
 
@@ -165,6 +165,13 @@ At this point a new (orange) menu appears. This is a multi-level menu with distr
 Colour blindness affects approx. 8% of males and 0.5% of females. It's good to see that for all forms of colour blindness, the site performs well providing good contrasts throughout (better, in fact than the oranges mentioned above). In particular, the Deuteranopia form which is the predominant form of colour blindness is well handled.
 
 ![Deuteranopia](Deuteranopia.jpg)
+
+####Accessibility
+Accessibility is a very important element of any site. Previously, Browsealoud was employed on the site but while there is [mention](http://itsligo.ie/accessibility/) of it on the new site, the feature is not enabled. The W3C WAI initiative points the way forward for handling accessiblity issues. [WAI-ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Web_applications_and_ARIA_FAQ) (Accessible Rich Internet Applications) is the specification to employ to make web sites more accessible to a diverse range of users, including those dependant on assistive technologies such as screen readers and magnifiers. Truthfully, there is some effort needed to embrace this reasonable standard and I think, certainly, for public bodies, this should be regarded as a minimum. There is no evidence from a quick inspection of ARIA markup in the site.
+Still, even small steps are welcome to enable access to an audience often disadvantaged by the march of technology. The lowest-hanging fruit is to simply provide textual descriptions of key graphics on the site (via **Alt** attributes) - this is readily handled by Wordpress but regrettably not employed to date.
+I ran the site through [Voiceover ](http://www.apple.com/ie/accessibility/osx/voiceover/) (Apple have long been supporters of good accessiblity). It's sobering to consider what the world sounds like to those with screen-readers:
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225556357&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 ---
 ###Wrap up

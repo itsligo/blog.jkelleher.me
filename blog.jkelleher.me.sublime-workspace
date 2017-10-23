@@ -319,6 +319,104 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "user/themes/jktheme/templates/chart-post.html.twig",
+			"settings":
+			{
+				"buffer_size": 4613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2016-1-31-retention-computing/Data for Sankey",
+			"settings":
+			{
+				"buffer_size": 2256,
+				"line_ending": "Unix",
+				"name": "Data for Sankey"
+			}
+		},
+		{
+			"file": "user/pages/blog/2016-3-3-ty-taster/post.md",
+			"settings":
+			{
+				"buffer_size": 1084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2016-3-5-vagrant/post.md",
+			"settings":
+			{
+				"buffer_size": 4861,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/about/page.md",
+			"settings":
+			{
+				"buffer_size": 239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/themes/jktheme/templates/partials/base.html.twig",
+			"settings":
+			{
+				"buffer_size": 3528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sftp-config.json",
+			"settings":
+			{
+				"buffer_size": 1388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/computing-projects-showcase/post.md",
+			"settings":
+			{
+				"buffer_size": 7734,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2016-1-31-retention-computing/post.md",
+			"settings":
+			{
+				"buffer_size": 1409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/john/Documents/dev/bustard_iv/tech_notes",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix",
+				"name": "Notes - Bustard Heating Ltd, IV No: 2015-2149 and"
+			}
+		},
+		{
+			"file": "user/pages/blog/2016-2-13-gsm-iot/post.md",
+			"settings":
+			{
+				"buffer_size": 2997,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user/pages/blog/2015-09-21-itsligo-site/post.md",
+			"settings":
+			{
+				"buffer_size": 19239,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -327,10 +425,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "package",
+		"height": 69.0,
+		"last_filter": "install pack",
 		"selected_items":
 		[
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
 			[
 				"package",
 				"Package Control: List Packages"
@@ -448,20 +550,57 @@
 		"/Users/john/Sites/blog.jkelleher.me",
 		"/Users/john/Sites/blog.jkelleher.me/user",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/about",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-21-itsligo-site",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-1-31-retention-computing",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-2-13-gsm-iot",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-3-3-ty-taster",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-3-5-vagrant",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/computing-projects-showcase",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/wpf-a-commercial-showcase-app",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates"
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials"
 	],
 	"file_history":
 	[
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-21-itsligo-site/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
-		"/Users/john/Sites/blog.jkelleher.me/index.php",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/chart-javascripts.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/default.md",
+		"/Users/john/Documents/Arduino/webserver/wwwserver/www/index.html",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/javascripts.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/chart-post.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/chart-base.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-1-31-retention-computing/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/base.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2016-1-14-git-happens/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-11-22-multiple-git-identities/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/index.php",
+		"/Users/john/.ssh/config",
+		"/Users/john/Documents/dev/scotch-box/public/.git/config",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/post.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-10-13-bash-record/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-10-19-jekyll-theme/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-11-23-vs2015-update/post.md",
+		"/Users/john/Documents/dev/vs/rad301/camproll/README.md",
+		"/Users/john/Documents/dev/vs/rad301/camproll/.git/config",
+		"/etc/hosts",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-24-building-sites/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/plugins/mediaembed/vendor/Requests/library/Requests/Exception/HTTP/404.php",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/life-at-googleplex/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-21-itsligo-site/post.md",
+		"/Users/john/Sites/blog.jkelleher.me/sftp-config.json",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css/main.css",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/main.scss",
+		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/default.html.twig",
+		"/Users/john/Sites/blog.jkelleher.me/user/config/site.yaml",
+		"/Users/john/Sites/blog.jkelleher.me/.htaccess",
+		"/Users/john/Sites/blog.jkelleher.me/.gitignore",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/localhost-options/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-09-14-kernel_task-issues/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/2015-08-13-web-dev-workflow/post.md",
@@ -480,8 +619,6 @@
 		"/Users/john/Sites/blog.jkelleher.me/system/config/system.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/system.yaml",
 		"/Users/john/Downloads/localhost.png",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/scss/main.scss",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/default.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/ba-da-bing-ba-da-bing/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/made-to-stick/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/microsoft-surface-app/post.md",
@@ -539,7 +676,6 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/death-by-powerpoint/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/learning-in-2020/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/composing-posting-videos/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/config/site.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/default.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/random.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/the-elephant-in-the-room/post.md",
@@ -553,48 +689,28 @@
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/drupal-a-fragile-creature/post.md",
 		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/relatedpages.yaml",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/relatedpages.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/css/main.css",
 		"/Users/john/Sites/blog.jkelleher.me/user/pages/about/page.md",
-		"/Users/john/Sites/blog.jkelleher.me/.gitignore",
 		"/Users/john/Sites/blog.jkelleher.me/user/plugins/mediaembed/.gitignore",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/javascripts.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/javascripts.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/post.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/jktheme/templates/partials/article.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/postmeta.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/partials/article.html.twig",
 		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/templates/page.html.twig",
-		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/cachebuster.yaml",
-		"/Users/john/Sites/blog.jkelleher.me/config.rb",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/azure-deployment/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/a-glimpse-into-mobile-development/post.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/themes/mediator/scss/main.scss",
-		"/Users/john/Sites/blog.jkelleher.me/system/config/site.yaml",
-		"/Users/john/Sites/blog.jkelleher.me/sftp-config.json",
-		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/weird-al-yankovic-trapped-in-the-drive-thru/item.md",
-		"/Users/john/Sites/blog.jkelleher.me/user/pages/blog/spider-pill-bowel-scanner-will-be-ready-within-a-year/item.md",
-		"/Users/john/Sites/blog.jkelleher.me/export/88-examples-of-incredible-aerial-photography/item.md",
-		"/Users/john/Sites/class.jkelleher.me/content/08-prj300/03-handup/01-repeat/modproject.txt",
-		"/Users/john/Sites/class.jkelleher.me/content/about/about.txt",
-		"/Users/john/Sites/class.jkelleher.me/site/templates/about.php",
-		"/Users/john/Sites/class.jkelleher.me/content/09-prj400/03-handup/02-submission/modproject.txt",
-		"/Users/john/Sites/class.jkelleher.me/site/config/config.php",
-		"/Users/john/Sites/class.jkelleher.me/.htaccess",
-		"/Users/john/Sites/class.jkelleher.me/content/05-rad302/module.txt",
-		"/Users/john/Documents/dev/meanstack/app.js",
-		"/Users/john/Documents/dev/meanjs-with-token-auth/gruntfile.js",
-		"/Users/john/Sites/class.jkelleher.me/content/03-foop202/99-assess/2015-ca2/modweek.txt"
+		"/Users/john/Sites/blog.jkelleher.me/user/config/plugins/cachebuster.yaml"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/john/Sites/blog.jkelleher.me/user/pages/blog",
+			".",
+			"<current file>",
 			"",
 			".",
 			"/user",
@@ -608,6 +724,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mean.js",
+			"meanjs",
+			"#090",
+			"Games",
+			"#090",
+			"Games",
+			"#F50",
+			"repo",
+			"content",
+			"ini_set('memory_limit', '1024M');",
+			"tag: [",
+			"ta",
+			"tag: [",
+			"pefor",
+			"applying",
+			"img-center",
+			"center",
+			"running",
+			"awesom",
+			"page.media",
+			"shore",
+			"JS",
+			"written",
+			"w",
+			"cdn",
+			"report",
+			"www.",
 			"full-pag",
 			"full",
 			"gtmet",
@@ -708,34 +851,7 @@
 			"320px",
 			"auth",
 			"350px",
-			"400px",
-			"width",
-			"active",
-			"well",
-			"background-color: #FFF;",
-			".well",
-			"well",
-			"well-bg",
-			"{{$root.authentication.isAdmin}}",
-			"{auth",
-			"auth",
-			"ui-",
-			"index",
-			"indexcon",
-			"logout",
-			"button",
-			"input",
-			"getStudentsPlc",
-			"GetPreferencesByPlcId",
-			"truncate",
-			"GetStudentPlacementsByPlacementId",
-			"servicebase",
-			"/token",
-			"token",
-			"spsDataToken.baseUrl()",
-			"populatePrefBtn",
-			"option in orderedItems ",
-			"s."
+			"400px"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -743,6 +859,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"http://www.",
 			"{{$root.authentication.userRole=='admin'}}",
 			"{$root.authentication",
 			"Plc",
@@ -869,8 +986,7 @@
 			"Provider",
 			"provider",
 			"Prov",
-			"Provider",
-			"provider"
+			"Provider"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -881,8 +997,1111 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "user/themes/jktheme/templates/chart-post.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "user/pages/blog/2016-1-31-retention-computing/Data for Sankey",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1509,
+								1509
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Data for Sankey",
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "user/pages/blog/2016-3-3-ty-taster/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								819,
+								822
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "user/pages/blog/2016-3-5-vagrant/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "user/pages/about/page.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "user/themes/jktheme/templates/partials/base.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sftp-config.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1388
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "user/pages/blog/computing-projects-showcase/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "user/pages/blog/2016-1-31-retention-computing/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/john/Documents/dev/bustard_iv/tech_notes",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Notes - Bustard Heating Ltd, IV No: 2015-2149 and",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Eiffel (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "user/pages/blog/2016-2-13-gsm-iot/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "user/pages/blog/2015-09-21-itsligo-site/post.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								155
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -941,7 +2160,7 @@
 	"project": "blog.jkelleher.me.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -951,12 +2170,76 @@
 		"selected_items":
 		[
 			[
+				"base.",
+				"user/themes/jktheme/templates/partials/base.html.twig"
+			],
+			[
+				"about",
+				"user/pages/about/page.md"
+			],
+			[
+				"project",
+				"user/pages/blog/computing-projects-showcase/post.md"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"base.html",
+				"user/themes/jktheme/templates/partials/base.html.twig"
+			],
+			[
+				"404",
+				"user/plugins/mediaembed/vendor/Requests/library/Requests/Exception/HTTP/404.php"
+			],
+			[
+				"sftp",
+				"sftp-config.json"
+			],
+			[
+				"sligo",
+				"user/pages/blog/life-at-googleplex/post.md"
+			],
+			[
+				"main.css",
+				"user/themes/jktheme/css/main.css"
+			],
+			[
+				"itsligo",
+				"user/pages/blog/2015-09-21-itsligo-site/post.md"
+			],
+			[
+				"base",
+				"user/themes/jktheme/templates/partials/base.html.twig"
+			],
+			[
+				".hta",
+				".htaccess"
+			],
+			[
+				"default.md",
+				"user/pages/blog/default.md"
+			],
+			[
+				"site",
+				"user/config/site.yaml"
+			],
+			[
+				"default",
+				"user/themes/jktheme/templates/default.html.twig"
+			],
+			[
 				".htac",
 				".htaccess"
 			],
 			[
 				"post.html",
 				"user/themes/jktheme/templates/post.html.twig"
+			],
+			[
+				".gitig",
+				".gitignore"
 			],
 			[
 				"index.php",
@@ -977,10 +2260,6 @@
 			[
 				"system",
 				"user/config/system.yaml"
-			],
-			[
-				"base.html",
-				"user/themes/jktheme/templates/partials/base.html.twig"
 			],
 			[
 				"badabada",
@@ -1215,10 +2494,6 @@
 				"user/pages/blog/the-elephant-in-the-room/post.md"
 			],
 			[
-				"project",
-				"user/pages/blog/computing-projects-showcase/post.md"
-			],
-			[
 				"samsung",
 				"user/pages/blog/samsung-hd-camera-trick/post.md"
 			],
@@ -1227,16 +2502,8 @@
 				"user/themes/jktheme/scss/main.scss"
 			],
 			[
-				"default",
-				"user/themes/mediator/templates/default.html.twig"
-			],
-			[
 				"postmeta",
 				"user/themes/jktheme/templates/partials/postmeta.html.twig"
-			],
-			[
-				"base",
-				"user/themes/jktheme/templates/partials/base.html.twig"
 			],
 			[
 				"how",
@@ -1315,14 +2582,6 @@
 				"user/config/system.yaml"
 			],
 			[
-				"main.css",
-				"user/themes/jktheme/css/main.css"
-			],
-			[
-				"site",
-				"system/config/site.yaml"
-			],
-			[
 				"optimise",
 				"user/pages/blog/optimising-web-sites/post.md"
 			],
@@ -1333,10 +2592,6 @@
 			[
 				"blog/",
 				"user/pages/blog/a-glimpse-into-mobile-development/post.md"
-			],
-			[
-				"about",
-				"site/templates/about.php"
 			],
 			[
 				"prj300/begin",
@@ -1373,10 +2628,6 @@
 			[
 				"app.js",
 				"app/scripts/app.js"
-			],
-			[
-				"index",
-				"app/index.html"
 			],
 			[
 				"gulp",
@@ -1429,38 +2680,6 @@
 			[
 				"custom",
 				"app/styles/sass/_custom.scss"
-			],
-			[
-				"tutor",
-				"app/views/partials/tutor/tutor_details.html"
-			],
-			[
-				"studentdet",
-				"app/views/partials/student/student_details.html"
-			],
-			[
-				"placementdetail",
-				"app/views/partials/placement/placement_details_admin.html"
-			],
-			[
-				"placement",
-				"app/views/partials/placement/placement_details.html"
-			],
-			[
-				"providerdet",
-				"app/views/partials/provider/provider_details.html"
-			],
-			[
-				"programmes",
-				"app/views/partials/programme/programme_details.html"
-			],
-			[
-				"placementtype",
-				"app/views/partials/placement_type/placement_type_details.html"
-			],
-			[
-				"data_placements",
-				"app/scripts/services/data_placements.js"
 			]
 		],
 		"width": 0.0
@@ -1495,7 +2714,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 323.0,
+	"side_bar_width": 340.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
